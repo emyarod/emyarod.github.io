@@ -1,12 +1,23 @@
 import React from 'react';
+import Headroom from 'react-headroom';
+import { Link } from 'react-router';
 import logo from '../logo.svg';
 import './Header.scss';
 
 export default function Header() {
   return (
-    <div className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <h2>Welcome to React</h2>
-    </div>
+    <Headroom>
+      <header className="App-header">
+        <nav>
+          <img src={logo} className="App-logo" alt="logo" />
+          <div>
+            {/* FIXME: activeStyle/activeClassName */}
+            <Link to="/">Home</Link>
+            <Link to="/portfolio" activeClassName="active">Portfolio</Link>
+            <Link to="/contact" activeClassName="active">Contact</Link>
+          </div>
+        </nav>
+      </header>
+    </Headroom>
   );
 }
