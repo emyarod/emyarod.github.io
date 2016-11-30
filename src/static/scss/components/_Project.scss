@@ -1,0 +1,19 @@
+.project-summary__section {
+  // display: flex;
+  // flex-flow: row wrap;
+  // margin-right: 36px;
+  padding: 10px 0;
+}
+
+.project-summary__label {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.project-summary__content {
+  display: flex;
+  margin: 5px 0;
+  // justify-content: flex-start;
+  // flex-flow: row wrap;
+  // align-items: flex-start;
+}

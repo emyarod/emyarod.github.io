@@ -1,0 +1,16 @@
+.cta {
+  background-color: lighten(black, 60);
+
+  &__buttons {
+    display: flex;
+    justify-content: space-around;
+
+    .btn {
+      margin: .3125rem 0; // 5px
+    }
+
+    &--home {
+      flex-direction: column;
+    }
+  }
+}

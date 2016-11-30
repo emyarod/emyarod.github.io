@@ -2,7 +2,6 @@ import React from 'react';
 import Headroom from 'react-headroom';
 import { Link } from 'react-router';
 import logo from '../logo.svg';
-import './Header.scss';
 
 export default function Header() {
   return (

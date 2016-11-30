@@ -2,6 +2,9 @@
 
 html {
   box-sizing: border-box;
+
+  // TODO: talkin bout rems?
+  font-size: 16px;
 }
 
 *,
@@ -9,3 +12,17 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+// TODO: import partials and despecify selectors
+@import './static/scss/utils';
+@import './static/scss/layout';
+@import './static/scss/typography';
+@import './static/scss/jumbotron';
+@import './static/scss/tags';
+@import './static/scss/buttons';
+// @import './App';
+
+// import component SCSS
+@import './static/scss/components/Header';
+@import './static/scss/components/Project';
+@import './static/scss/components/CTA';
