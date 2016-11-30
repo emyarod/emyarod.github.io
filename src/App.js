@@ -1,18 +1,41 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { BrowserRouter, Match } from 'react-router'
 import Header from './components/Header';
-import './App.scss';
+import CTA from './components/CTA';
+import routes from './config/routes';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Header />
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+const App = () => (
+  // <BrowserRouter history={history}>
+  <BrowserRouter>
+    <div>
+      <Header />
+      {
+        routes.map((route, index) => (
+          // rendering `Match`s with different
+          // components but the same pattern as before
+          <Match
+            // FIXME: index as key
+            key={index}
+            pattern={route.pattern}
+            // component={route.main}
+            render={matchProps => {
+              const Component = route.main;
+
+              return (
+                <div className="content">
+                  <Component {...matchProps} />
+                  <CTA matchProps={matchProps} />
+                </div>
+              );
+            }}
+            exactly={route.exactly}
+          />
+        ))
+      }
+
+      <p>Footer placeholder</p>
+    </div>
+  </BrowserRouter>
+);
 
 export default App;
