@@ -30,8 +30,6 @@ const CTAOptions = {
     title: null,
     subtitle: null,
     buttons(prev, next) {
-      console.log('prev', prev);
-      console.log('next', next);
       return (
         <div className="cta__buttons cta__buttons--nav">
           {/* FIXME: implement scroll to top (after react-router devs push it) */}
