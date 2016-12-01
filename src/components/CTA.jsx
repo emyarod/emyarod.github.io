@@ -9,8 +9,8 @@ const CTAOptions = {
     buttons() {
       return (
         <div className="cta__buttons cta__buttons--home">
-          <a href="/portfolio" className="btn">Check out my portfolio</a>
-          <a href="/contact" className="btn">Get in touch with me</a>
+          <Link to="/portfolio" className="btn">Check out my portfolio</Link>
+          <Link to="/contact" className="btn">Get in touch with me</Link>
         </div>
       );
     },
@@ -21,7 +21,7 @@ const CTAOptions = {
     buttons() {
       return (
         <div className="cta__buttons">
-          <a href="/contact" className="btn">Get in touch with me</a>
+          <Link to="/contact" className="btn">Get in touch with me</Link>
         </div>
       )
     },
