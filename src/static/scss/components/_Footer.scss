@@ -1,0 +1,14 @@
+.footer {
+  background-color: #000;
+
+  small {
+    display: block;
+    margin: 1rem;
+    color: rgba(#fff, .7);
+  }
+
+  &-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+}
