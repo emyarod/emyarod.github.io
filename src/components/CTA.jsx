@@ -5,7 +5,7 @@ import projectData from '../data/projectData';
 const CTAOptions = {
   home: {
     title: 'Interested in working together?',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    subtitle: `Send me a message and let's get things started. Or check out some of my work if you want to learn more.`,
     buttons() {
       return (
         <div className="cta__buttons cta__buttons--home">
