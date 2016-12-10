@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Match } from 'react-router'
 import Header from './components/Header';
 import CTA from './components/CTA';
+import Footer from './components/Footer';
 import routes from './config/routes';
 
 const App = () => (
@@ -33,7 +34,7 @@ const App = () => (
         ))
       }
 
-      <p>Footer placeholder</p>
+      <Footer />
     </div>
   </BrowserRouter>
 );
