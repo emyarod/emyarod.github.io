@@ -1,0 +1,20 @@
+.landing {
+  background-color: #00b259;
+  background-image:
+  linear-gradient(30deg, #32c17a 12%, transparent 12.5%, transparent 87%, #32c17a 87.5%, #32c17a),
+  linear-gradient(150deg, #32c17a 12%, transparent 12.5%, transparent 87%, #32c17a 87.5%, #32c17a),
+  linear-gradient(30deg, #32c17a 12%, transparent 12.5%, transparent 87%, #32c17a 87.5%, #32c17a),
+  linear-gradient(150deg, #32c17a 12%, transparent 12.5%, transparent 87%, #32c17a 87.5%, #32c17a),
+  linear-gradient(60deg, #008e47 25%, transparent 25.5%, transparent 75%, #008e47 75%, #008e47),
+  linear-gradient(60deg, #008e47 25%, transparent 25.5%, transparent 75%, #008e47 75%, #008e47);
+  background-size: 5rem 8.75rem;
+  background-position: 0 0, 0 0, 2.5rem 4.375rem, 2.5rem 4.375rem, 0 0, 2.5rem 4.375rem;
+}
+
+// Technical Expertise section
+.skills {
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+}
