@@ -53,9 +53,9 @@ function CTABase({ ctaType, prev, next }) {
           {
             CTAOptions[ctaType].title
               ? (
-                <h3 className="cta__text__title">
+                <h5 className="cta__text__title sb">
                   {CTAOptions[ctaType].title}
-                </h3>
+                </h5>
               )
               : null
           }
