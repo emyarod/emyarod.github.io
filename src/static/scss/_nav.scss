@@ -1,0 +1,16 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  a:link {
+    padding: 0 .5rem;
+    color: $white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  a.active {
+    color: $green;
+  }
+}
