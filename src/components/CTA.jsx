@@ -31,7 +31,7 @@ const CTAOptions = {
     subtitle: null,
     buttons(prev, next) {
       return (
-        <div className="cta__buttons cta__buttons--nav">
+        <div className="cta__buttons cta__buttons--portfolioNav">
           {/* FIXME: implement scroll to top (after react-router devs push it) */}
           <Link to={`/portfolio/${prev}`} className="btn">
             ← Previous project
@@ -47,9 +47,9 @@ const CTAOptions = {
 
 function CTABase({ ctaType, prev, next }) {
   return (
-    <div className="block cta cta-contact">
-      <div className="wrap cta__wrap">
-        <div className="cta__text">
+    <div className={`block cta cta--${ctaType}`}>
+      <div className={`wrap cta__wrap cta__wrap--${ctaType}`}>
+        <div className={`cta__text cta__text--${ctaType}`}>
           {
             CTAOptions[ctaType].title
               ? (
