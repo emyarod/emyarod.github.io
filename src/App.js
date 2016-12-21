@@ -1,9 +1,10 @@
 import React from 'react';
-import { BrowserRouter, Match } from 'react-router'
+import { BrowserRouter, Match, Miss } from 'react-router'
 import Header from './components/Header';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 import routes from './config/routes';
+import FourOhFour from './components/404';
 
 const App = () => (
   // <BrowserRouter history={history}>
@@ -22,6 +23,9 @@ const App = () => (
             render={matchProps => {
               const Component = route.main;
 
+              // TODO: double check where to put scrolling
+              window.scroll(0, 0);
+
               return (
                 <div className="content">
                   <Component {...matchProps} />
@@ -33,7 +37,7 @@ const App = () => (
           />
         ))
       }
-
+      <Miss component={FourOhFour} />
       <Footer />
     </div>
   </BrowserRouter>
