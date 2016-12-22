@@ -3,9 +3,12 @@ import React from 'react';
 export default function Discorcabot() {
   return (
     <div>
+      <h4 className="label">Project overview</h4>
       <p>
         Discorcabot is a flexible, general purpose Discord chat bot, written in Node.js. The bot is designed to be easily extensible with features encapsulated in an organized module system.
       </p>
+      <br />
+      <h4 className="label">The Process</h4>
       <p>
         Writing modules for Discorcabot proved to be a helpful experience in working with public APIs. While Discorcabot is based on <a href="https://github.com/emyarod/orcabot">Orcabot (a Node.js IRC bot that I had previously written)</a>, Discorcabot favors ES6 Promises for handling asynchronous work instead of callbacks. Discorcabot also features new modules not found in the original Orcabot, such as music playback and Twitch.tv emote support.
       </p>
