@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+  background-color: $light-background;
+  word-wrap: break-word;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// FIXME: commented code
+a {
+  // text-decoration: none;
+}
