@@ -1,0 +1,46 @@
+.tiles {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+
+.project-tile {
+  background-color: #1a1a1a;
+  margin-top: .5rem;
+  transition: transition-default();
+
+  a {
+    display: block;
+    height: 100%;
+    padding: 2rem;
+    color: $white;
+
+    &:hover {
+      color: $link-color;
+    }
+  }
+
+  &:hover {
+    background-color: $light-background;
+  }
+}
+
+@media screen and (min-width: map-get($breakpoints, sm)) {}
+
+@media screen and (min-width: map-get($breakpoints, md)) {
+  .tiles {
+    flex-flow: row wrap;
+  }
+
+  .project-tile {
+    width: calc(50% - .5rem);
+  }
+}
+
+@media screen and (min-width: map-get($breakpoints, lg)) {}
+
+@media screen and (min-width: map-get($breakpoints, xl)) {
+  .project-tile {
+    width: calc((100% / 3) - .5rem);
+  }
+}
