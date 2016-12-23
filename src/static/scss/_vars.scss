@@ -1,0 +1,27 @@
+$black: #000;
+$white: #fff;
+
+$dark-background: #303030;
+$light-background: #fafafa;
+
+$text-color: rgba($black, .87);
+$secondary-text-color: rgba($black, .54);
+
+$blue: #1100af;
+$green: #00b259;
+$yellow: #ffd464;
+$CTA: #86eaef;
+// $CTA: #ed9e87;
+// $CTA: #c392ff;
+
+// link colors
+$link-color: $blue;
+$link-hover-color: #0d30ff;
+$link-active-color: #bc001c;
+// $link-visited-color: #5400bc;
+
+$nav-link-color: $white;
+$nav-link-hover-color: $yellow;
+$nav-link-active-color: $link-active-color;
+
+$animation-curve: cubic-bezier(.4,0,.2,1);
