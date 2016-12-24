@@ -1,0 +1,287 @@
+@keyframes stroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/**
+ * RWD ICON SVG ANIMATION
+ * animation steps:
+ * 1. stroke jumbotrons
+ * 2. stroke images
+ * 3. stroke text
+ * 4. fill jumbotrons
+ */
+@keyframes jumbotron {
+  25% {
+    stroke-dashoffset: 0;
+  }
+  75% {
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #00b259;
+  }
+}
+
+$device-offsets: (
+  'phone': (
+    'jumbotron': 101.958,
+    'content': 101.958,
+    'text': 30,
+  ),
+  'tablet': (
+    'jumbotron': 213.807,
+    'content': 122.15,
+    'text': 34,
+  ),
+  'laptop': (
+    'jumbotron': 353.795,
+    'content': 135.248,
+    'text': 44,
+  ),
+  'desktop': (
+    'jumbotron': 469.519,
+    'content': 179.485,
+    'text': 57,
+  ),
+);
+
+@keyframes content {
+  25% {
+    stroke-dashoffset: 0;
+  }
+  75% {
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #17d8e5;
+  }
+}
+
+@each $device, $device-map in $device-offsets {
+  @each $element, $offset in $device-map {
+    ##{$device}-#{$element} {
+      stroke-dashoffset: $offset;
+      stroke-dasharray: $offset;
+
+      @if $element == 'jumbotron' {
+        animation: jumbotron 4s $animation-curve forwards;
+        stroke: #00b259;
+      }
+
+      @if $element == 'content' {
+        rect {
+          animation: content 2s $animation-curve forwards 1s paused;
+          stroke: #17d8e5;
+        }
+      }
+
+      @if $element == 'text' {
+        animation: stroke 1s $animation-curve forwards 2s;
+
+        line {
+          stroke: rgba($black, .87);
+        }
+      }
+
+      // must be declared last
+      animation-play-state: paused;
+    }
+
+    .svg-container-animate ##{$device}-#{$element} {
+      animation-play-state: running;
+
+      rect {
+        animation-play-state: running;
+      }
+    }
+  }
+}
+
+$fades: (
+  /**
+  * APPS ICON SVG ANIMATION
+  * animation steps:
+  * 1. stroke frame and toolbar
+  * 2. stroke buttons & fill frame and toolbar
+  * 3. fill buttons
+  & 4. fill code
+  */
+  '#toolbar': (
+    name: 'toolbar',
+    stroke-dashoffset: 288,
+    stroke-initial: $black,
+    stroke-final: #3649e1,
+    fill-initial: transparent,
+    fill-final: #3649e1,
+    delay: null,
+  ),
+  '#frame': (
+    name: 'frame',
+    stroke-dashoffset: 1140.967,
+    stroke-initial: $black,
+    stroke-final: #3649e1,
+    fill-initial: transparent,
+    fill-final: rgba($black, .54),
+    delay: null,
+  ),
+  '#close': (
+    name: 'close',
+    stroke-dashoffset: 64.577,
+    stroke-initial: #ee4450,
+    stroke-final: #ee4450,
+    fill-initial: transparent,
+    fill-final: #ee4450,
+    delay: 1s,
+  ),
+  '#minimize': (
+    name: 'min',
+    stroke-dashoffset: 64.577,
+    stroke-initial: #f7b632,
+    stroke-final: #f7b632,
+    fill-initial: transparent,
+    fill-final: #f7b632,
+    delay: 1s,
+  ),
+  '#maximize': (
+    name: 'max',
+    stroke-dashoffset: 64.577,
+    stroke-initial: #30db3e,
+    stroke-final: #30db3e,
+    fill-initial: transparent,
+    fill-final: #30db3e,
+    delay: 1s,
+  ),
+  '#code path': (
+    name: 'code',
+    // stroke-dashoffset: unneeded,
+    stroke-initial: transparent,
+    stroke-final: transparent,
+    fill-initial: transparent,
+    fill-final: rgba($white, .87),
+    delay: 2s,
+  ),
+
+  /**
+   * CORE SKILLS ICON SVG ANIMATION
+   * animation steps:
+   * 1. stroke quad and penta
+   * 2. stroke legs & fill quad and penta
+   * 3. stroke, circle, and bar & fill legs
+   * 4. stroke braces & recolor, circle, bar, and braces
+   */
+  '#quad': (
+    name: 'quad',
+    stroke-dashoffset: 107.104,
+    stroke-initial: $black,
+    stroke-final: $black,
+    fill-initial: $light-background,
+    fill-final: $black,
+    delay: null,
+  ),
+  '#penta path': (
+    name: 'penta',
+    stroke-dashoffset: 211.313,
+    stroke-initial: $black,
+    stroke-final: $black,
+    fill-initial: $light-background,
+    fill-final: $black,
+    delay: null,
+  ),
+  '#rightleg path': (
+    name: 'legs',
+    stroke-dashoffset: 437.169,
+    stroke-initial: #e0e0e0,
+    stroke-final: #e0e0e0,
+    fill-initial: $light-background,
+    fill-final: #e0e0e0,
+    delay: 1s,
+  ),
+  '#leftleg path': (
+    name: 'legs',
+    stroke-dashoffset: 437.169,
+    stroke-initial: #e0e0e0,
+    stroke-final: #e0e0e0,
+    fill-initial: $light-background,
+    fill-final: #e0e0e0,
+    delay: 1s,
+  ),
+  '#circle': (
+    name: 'circle',
+    stroke-dashoffset: 67.015,
+    stroke-initial: $black,
+    stroke-final: $black,
+    fill-initial: $light-background,
+    fill-final: $light-background,
+    delay: 1s,
+  ),
+  '#bar': (
+    name: 'bar',
+    stroke-dashoffset: 131,
+    stroke-initial: $black,
+    stroke-final: #e0e0e0,
+    fill-initial: transparent,
+    fill-final: transparent,
+    delay: 2s,
+  ),
+  '#leftbrace': (
+    name: 'braces',
+    // stroke-dashoffset: unneeded,
+    stroke-initial: transparent,
+    stroke-final: transparent,
+    fill-initial: transparent,
+    fill-final: $black,
+    delay: 2s,
+  ),
+  '#rightbrace': (
+    name: 'braces',
+    // stroke-dashoffset: unneeded,
+    stroke-initial: transparent,
+    stroke-final: transparent,
+    fill-initial: transparent,
+    fill-final: $black,
+    delay: 2s,
+  ),
+);
+
+#code path,
+#leftbrace,
+#rightbrace {
+  fill: transparent;
+}
+
+@each $key, $map in $fades {
+  $name: map-get($map, name);
+  $stroke-dashoffset: map-get($map, stroke-dashoffset);
+  $stroke-initial: map-get($map, stroke-initial);
+  $stroke-final: map-get($map, stroke-final);
+  $fill-initial: map-get($map, fill-initial);
+  $fill-final: map-get($map, fill-final);
+  $delay: map-get($map, delay);
+
+  @keyframes #{$name} {
+    50% {
+      stroke-dashoffset: 0;
+      stroke: $stroke-initial;
+      fill: $fill-initial;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      stroke: $stroke-final;
+      fill: $fill-final;
+    }
+  }
+
+  #{$key} {
+    stroke-dasharray: $stroke-dashoffset;
+    stroke-dashoffset: $stroke-dashoffset;
+    animation: #{$name} 2s $animation-curve forwards $delay paused;
+  }
+
+  .svg-container-animate #{$key} {
+    animation-play-state: running;
+  }
+}
