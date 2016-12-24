@@ -1,0 +1,52 @@
+.block-revealer {
+  position: relative;
+  display: table;
+  margin-bottom: .5rem;
+
+  * {
+    margin: 0;
+  }
+
+  &-animate {
+    .block-revealer__content {
+      opacity: 0;
+      animation: .1s $animation-curve textFadeIn forwards;
+    }
+
+    .block-revealer__concealer {
+      // background-color and animation-delay determined by React props
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      transform: scaleX(0);
+      transform-origin: right;
+      animation: slideIn .5s $animation-curve,
+                 slideOut .5s $animation-curve;
+    }
+  }
+}
+
+@keyframes textFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  to {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+}
