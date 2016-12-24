@@ -1,0 +1,10 @@
+.label {
+  display: inline-block;
+  background-color: $yellow;
+  padding: 0 .375rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: rgba($black, .74); // TODO: check opacity
+  letter-spacing: .06rem;
+  text-transform: uppercase;
+}
