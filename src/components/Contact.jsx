@@ -1,16 +1,35 @@
 import React from 'react';
+import Jumbotron from './Jumbotron';
 
-export default function Contact() {
+export default function Contact({ pathname }) {
   return (
     <div className="contact">
-      <h1>Contact</h1>
-      <div className="jumbotron">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
+      <Jumbotron pathname={pathname} />
       <div className="block contact-form">
         <div className="wrap">
-          <h2>Contact form</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <form
+            id="contact-form"
+            action="https://formspree.io/mail@andrewf.wang"
+            method="POST"
+          >
+            <div className="form-control">
+              <label className="label" htmlFor="inputName">Name</label>
+              <input id="inputName" type="text" name="name" required />
+            </div>
+            <div className="form-control">
+              <label className="label" htmlFor="inputEmail">
+                Email address
+              </label>
+              <input id="inputEmail" type="email" name="_replyto" required />
+            </div>
+            <div className="form-control">
+              <label className="label" htmlFor="inputMessage">Message</label>
+              <textarea id="inputMessage" name="messsage" rows="5" required />
+            </div>
+            <input type="text" name="_gotcha" style={{'display': 'none'}} />
+            <input type="hidden" name="_next" value="/contact" />
+            <input className="btn" type="submit" value="Send" />
+          </form>
         </div>
       </div>
     </div>
