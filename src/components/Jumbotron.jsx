@@ -14,33 +14,31 @@ export default function Jumbotron({ bgp, pathname, landing, img, children }) {
   `;
 
   return (
-    <div className="jumbotron-container">
-      <MediaQuery minWidth={1201}>
-        <div
-          className={`jumbotron ${landing ? 'landing' : null}`}
-          style={{
-            ...styles,
-            'backgroundImage': `url(${img})`,
-          }}
-        >
-          <FadeIn>
+    <FadeIn>
+      <div className="jumbotron-container">
+        <MediaQuery minWidth={1201}>
+          <div
+            className={`jumbotron ${landing ? 'landing' : ''}`}
+            style={{
+              ...styles,
+              'backgroundImage': `url(${img})`,
+            }}
+          >
             <div className="wrap">{children}</div>
-          </FadeIn>
-        </div>
-      </MediaQuery>
-      <MediaQuery maxWidth={1200}>
-        <div
-          className={`jumbotron ${landing ? 'landing' : null}`}
-          style={{
-            ...styles,
-            'backgroundImage': `${scrim}, url(${img})`,
-          }}
-        >
-          <FadeIn>
+          </div>
+        </MediaQuery>
+        <MediaQuery maxWidth={1200}>
+          <div
+            className={`jumbotron ${landing ? 'landing' : ''}`}
+            style={{
+              ...styles,
+              'backgroundImage': `${scrim}, url(${img})`,
+            }}
+          >
             <div className="wrap">{children}</div>
-          </FadeIn>
-        </div>
-      </MediaQuery>
-    </div>
+          </div>
+        </MediaQuery>
+      </div>
+    </FadeIn>
   );
 }
