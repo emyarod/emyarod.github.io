@@ -17,73 +17,30 @@
   align-items: center;
   justify-content: space-around;
   height: 55px;
-  padding: 10px 30px;
-  background-color: #222;
-  color: white;
+  background-color: #000;
 
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    // max-width: map-get($container-max-widths, md);
-
-    div {
-      // display: flex;
-      // justify-content: space-around;
-    }
-
-    a {
-      padding: 0 0 0 10px;
-    }
+  .nav a {
+    font-size: .9rem;
   }
 }
 
-a.active {
-  color: red;
-}
-
-
+// 576
 @media screen and (min-width: map-get($breakpoints, sm)) {
   .App-header {
-    // height: 55px;
-    // padding: 10px 30px;
+    height: 90px;
 
-    nav a {
-      padding: 0 0 0 25px;
+    .nav a {
+      padding: 0 1rem;
     }
   }
 
   .headroom--unfixed {
     .App-header {
-      height: 115px;
-      padding: 40px;
+      height: 90px;
+
+      .nav a {
+        font-size: .95rem;
+      }
     }
   }
-}
-
-// @media screen and (min-width: map-get($breakpoints, md)) {
-//   .App-header {
-//     height: 65px;
-//     padding: 40px;
-//   }
-// }
-//
-// @media screen and (min-width: map-get($breakpoints, lg)) {
-//   .App-header {
-//     height: 65px;
-//     padding: 40px;
-//   }
-// }
-//
-// @media screen and (min-width: map-get($breakpoints, xl)) {
-//   .App-header {
-//     height: 65px;
-//     padding: 40px;
-//   }
-// }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
