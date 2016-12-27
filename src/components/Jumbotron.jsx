@@ -1,5 +1,6 @@
 import React from 'react';
 import MediaQuery from 'react-responsive';
+import FadeIn from './FadeIn';
 
 export default function Jumbotron({ bgp, pathname, landing, img, children }) {
   const styles = {
@@ -22,7 +23,9 @@ export default function Jumbotron({ bgp, pathname, landing, img, children }) {
             'backgroundImage': `url(${img})`,
           }}
         >
-          <div className="wrap">{children}</div>
+          <FadeIn>
+            <div className="wrap">{children}</div>
+          </FadeIn>
         </div>
       </MediaQuery>
       <MediaQuery maxWidth={1200}>
@@ -33,7 +36,9 @@ export default function Jumbotron({ bgp, pathname, landing, img, children }) {
             'backgroundImage': `${scrim}, url(${img})`,
           }}
         >
-          <div className="wrap">{children}</div>
+          <FadeIn>
+            <div className="wrap">{children}</div>
+          </FadeIn>
         </div>
       </MediaQuery>
     </div>
