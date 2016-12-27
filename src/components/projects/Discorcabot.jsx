@@ -5,7 +5,7 @@ export default function Discorcabot() {
     <div>
       <h4 className="label">Project overview</h4>
       <p>
-        Discorcabot is a flexible, general purpose Discord chat bot, written in Node.js. The bot is designed to be easily extensible with features encapsulated in an organized module system.
+        Discorcabot is a flexible, general purpose <a href="https://discordapp.com/">Discord</a> chat bot, written in Node.js. The bot is designed to be easily extensible with features encapsulated in an organized module system.
       </p>
       <br />
       <h4 className="label">The Process</h4>
