@@ -910,14 +910,14 @@ babel-register@^6.16.0, babel-register@^6.18.0:
     mkdirp "^0.5.1"
     source-map-support "^0.4.2"
 
-babel-runtime@6.11.6, babel-runtime@^6.0.0, babel-runtime@^6.11.6, babel-runtime@^6.9.0, babel-runtime@^6.9.1:
+babel-runtime@6.11.6:
   version "6.11.6"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.11.6.tgz#6db707fef2d49c49bfa3cb64efdb436b518b8222"
   dependencies:
     core-js "^2.4.0"
     regenerator-runtime "^0.9.5"
 
-babel-runtime@^6.18.0:
+babel-runtime@^6.0.0, babel-runtime@^6.11.6, babel-runtime@^6.18.0, babel-runtime@^6.9.0, babel-runtime@^6.9.1:
   version "6.20.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.20.0.tgz#87300bdcf4cd770f09bf0048c64204e17806d16f"
   dependencies:
@@ -4434,7 +4434,7 @@ react-dev-utils@^0.3.0:
     sockjs-client "1.0.3"
     strip-ansi "3.0.1"
 
-react-dom@^15.4.1:
+react-dom@^15.3.2, react-dom@^15.4.1:
   version "15.4.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.4.1.tgz#d54c913261aaedb17adc20410d029dcc18a1344a"
   dependencies:
@@ -4474,7 +4474,7 @@ react-router@next:
     query-string "4.2.3"
     react-broadcast "^0.1.2"
 
-react@^15.4.1:
+react@^15.3.2, react@^15.4.1:
   version "15.4.1"
   resolved "https://registry.yarnpkg.com/react/-/react-15.4.1.tgz#498e918602677a3983cd0fd206dfe700389a0dd6"
   dependencies:
@@ -4784,6 +4784,18 @@ sass-loader@^4.0.2:
 sax@^1.1.4, sax@~1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.1.tgz#7b8e656190b228e81a66aea748480d828cd2d37a"
+
+scrollmonitor-react@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/scrollmonitor-react/-/scrollmonitor-react-2.0.2.tgz#307bccfbf7e442f2fa134ada578d813f1041a55d"
+  dependencies:
+    react "^15.3.2"
+    react-dom "^15.3.2"
+    scrollmonitor "^1.1.1"
+
+scrollmonitor@^1.1.1:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/scrollmonitor/-/scrollmonitor-1.2.2.tgz#7a5f314e875126ecd9f3cc68babd5dabf9951f39"
 
 "semver@2 || 3 || 4 || 5", "semver@2.x || 3.x || 4 || 5", semver@^5.1.0, semver@^5.3.0, semver@~5.3.0:
   version "5.3.0"
