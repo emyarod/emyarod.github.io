@@ -1,4 +1,5 @@
 import React from 'react';
+import refugeimg from '../../static/img/Portfolio/refuge/body.png';
 
 export default function Refuge() {
   return (
@@ -13,7 +14,9 @@ export default function Refuge() {
       <p>
         A simple text form allows users to create new note components, which are individually editable or removable. Actions such as creating, updating, or editing notes also make use of Node.js's EventEmitter API, notifying the user of any changes to their note repositories.
       </p>
-      <br />
+      <figure>
+        <img className="mockup" alt={"Refuge"} src={refugeimg} />
+      </figure>
       <h4 className="label">The Process</h4>
       <p>
         Writing Refuge was a great introduction to React for me. My experience with writing Refuge helped me better understand some core fundamentals to writing code with React, like the React component life cycle, how to properly compose components to avoid inheritance, and how to manage shared state between components.
