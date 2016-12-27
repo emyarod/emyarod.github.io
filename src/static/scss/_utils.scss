@@ -1,19 +1,31 @@
+
+// `px`s are used for grid breakpoints and container widths because
+// the viewport width is in pixels and doesn't change with the font size.
 $breakpoints: (
-  // Extra small screen / phone
   xs: 0,
-  // Small screen / phone
   sm: 576px,
-  // Medium screen / tablet
   md: 768px,
-  // Large screen / desktop
   lg: 992px,
-  // Extra large screen / wide desktop
-  xl: 1200px
+  xl: 1200px,
 );
 
-$container-max-widths: (
+$container-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px
+  xl: 1140px,
 );
+
+/** @function
+ * @name rem
+ * Convert pixels to rems
+ * @param {Number} - pixel value
+ * @param {Number} - rem value (Default is 16px)
+ */
+@function rem($pxval, $base: 16) {
+  @return ($pxval / $base) * 1rem;
+}
+
+@function transition-default() {
+  @return all .2s $animation-curve;
+}
