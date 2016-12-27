@@ -1,56 +1,101 @@
 import React from 'react';
 import projectData from '../data/projectData';
+import Jumbotron from './Jumbotron';
+import Chip from './Chip';
+import Icon from './Icons';
+import iconPaths from '../data/iconPaths';
 
 export default function Project({ params }) {
-  const project = projectData.find(element => element.path === params.path);
-  const Details = project.details;
+  const {
+    name,
+    jumbotronContent: { blurb, img, bgp },
+    summary: { type, role, tools, projectSource, projectLink },
+    details: Details,
+  } = projectData.find(element => element.path === params.path);
+
   return (
     <div className="project">
-      <div className="jumbotron">
-        <h1>{project.name}</h1>
-        <p>{project.jumbotronContent.img}</p>
-        <p>{project.jumbotronContent.blurb}</p>
-      </div>
-      <div className="block wrap project-summary">
-        <div className="project-summary__section">
-          <div className="project-summary__label">Project Type:</div>
-          <div className="project-summary__content">
-            <div className="project-summary__tag">{project.summary.type}</div>
+      <Jumbotron pathname={params.path} img={img} bgp={bgp}>
+        <h1>{name}</h1>
+        <p className="sb blurb">{blurb}</p>
+      </Jumbotron>
+      <div className="block">
+        <div className="wrap project-details">
+          <div className="project-details__section">
+            <h5 className="project-details__label sb">Project Type</h5>
+            <div className="project-details__content">
+              <Chip>{type}</Chip>
+            </div>
           </div>
-        </div>
-        <div className="project-summary__section">
-          <div className="project-summary__label">Role:</div>
-          <div className="project-summary__content">
-            <div className="project-summary__tag">{project.summary.role}</div>
+          <div className="project-details__section">
+            <h5 className="project-details__label sb">Role</h5>
+            <div className="project-details__content">
+              <Chip>{role}</Chip>
+            </div>
           </div>
-        </div>
-        <div className="project-summary__section">
-          <div className="project-summary__label">
-            Tools & Technologies Used:
-          </div>
-          <ul>
-            {/* FIXME: index as key */}
-            {project.summary.tools.map((tech, i) => {
-              return <li key={i}>{tech}</li>;
-            })}
-          </ul>
-        </div>
-        <div className="project-summary__source">
-          <div className="project-summary__label">Project source:</div>
-          <div className="project-summary__content">
-            <a
-              className="btn project-summary__btn"
-              href={project.summary.projectLink.href}
-            >
-              {project.summary.projectLink.text}
-            </a>
-          </div>
-        </div>
-      </div>
+          <div id="tech" className="project-details__section">
+            <h5 className="project-details__label sb">Tech Stack</h5>
+            <div className="project-details__content">
+              {
+                tools.map((tech, i) => {
+                  const avatarContent = typeof tech !== 'string'
+                    ? (
+                      <Icon
+                        className="icon"
+                        icon={iconPaths[tech[0].toLowerCase()]}
+                      />
+                    )
+                    : tech.charAt(0);
 
-      {/* TODO: include wrapper div in Details component */}
-      <div className="block wrap project-details">
-        <Details />
+                  return (
+                    <Chip key={tech} avatar avatarContent={avatarContent}>
+                      {tech}
+                    </Chip>
+                  );
+                })
+              }
+            </div>
+          </div>
+          {
+            projectSource
+              ? (
+                <div className="project-details__section">
+                  <h5 className="project-details__label sb">Project links</h5>
+                  <div className="project-details__content">
+                    {
+                      projectSource
+                        ? (
+                          <a
+                            className="btn project-details__btn"
+                            href={projectSource.href}
+                          >
+                            {projectSource.text}
+                          </a>
+                        )
+                        : null
+                    }
+                    {
+                      projectLink
+                        ? (
+                          <a
+                            className="btn project-details__btn"
+                            href={projectLink.href}
+                          >
+                            {projectLink.text}
+                          </a>
+                        )
+                        : null
+                    }
+                  </div>
+                </div>
+              )
+              : null
+          }
+          <div className="project-details__section">
+            <hr />
+            <Details />
+          </div>
+        </div>
       </div>
     </div>
   );
