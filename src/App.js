@@ -16,8 +16,7 @@ const App = () => (
           // rendering `Match`s with different
           // components but the same pattern as before
           <Match
-            // FIXME: index as key
-            key={index}
+            key={route.pattern}
             pattern={route.pattern}
             // component={route.main}
             render={matchProps => {
