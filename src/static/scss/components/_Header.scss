@@ -1,6 +1,15 @@
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 35px;
+.Wang {
+  height: rem(35);
+  fill: $white;
+  transition: transition-default();
+
+  &:hover {
+    fill: #ed9e87;
+  }
+
+  svg {
+    height: 100%;
+  }
 }
 
 .App-header {
