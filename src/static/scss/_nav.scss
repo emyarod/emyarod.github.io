@@ -1,16 +1,21 @@
-nav {
+.nav {
   display: flex;
+  align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
 
-  a:link {
+  a {
     padding: 0 .5rem;
-    color: $white;
     font-weight: bold;
     text-transform: uppercase;
-  }
+    color: $nav-link-color;
 
-  a.active {
-    color: $green;
+    &:hover {
+      color: $nav-link-hover-color;
+    }
+
+    &.active {
+      color: $green;
+    }
   }
 }
