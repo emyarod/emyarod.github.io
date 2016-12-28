@@ -4,7 +4,12 @@ import Jumbotron from './Jumbotron';
 export default function Contact({ pathname }) {
   return (
     <div className="contact">
-      <Jumbotron pathname={pathname} />
+      <Jumbotron pathname={pathname} img={ContactImg}>
+        <h1>Let's talk.</h1>
+        <p className="sb blurb">
+          I'm always interested in new opportunities. If you have a project you'd like to discuss, or even if you just want to find out more about me, get in touch with me so we can get started.
+        </p>
+      </Jumbotron>
       <div className="block contact-form">
         <div className="wrap">
           <form
