@@ -1,24 +1,129 @@
 import React from 'react';
+import Jumbotron from './Jumbotron';
+import Label from './Label';
+import FadeIn from './FadeIn';
+import BlockRevealer from './BlockRevealer';
+import handleEnterViewport from '../config/utils';
+import AnimatedSVG from './AnimatedSVG';
+import rwd from '../static/img/Home/rwd.svg';
+import apps from '../static/img/Home/apps.svg';
+import core from '../static/img/Home/core.svg';
 
-export default function Home() {
+export default function Home({ pathname }) {
   return (
     <div className="home">
-      <div className="wrap jumbotron">
+      <Jumbotron pathname={pathname} landing>
         <h1>Andrew Wang</h1>
-        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-      </div>
-      <div className="block skills">
+        <h5 className="sb blurb">
+          Front-end web developer based in the Bay Area
+        </h5>
+      </Jumbotron>
+      {/* BEGIN ABOUT */}
+      <div className="block dark">
         <div className="wrap">
-          <h2>Bio + Skills</h2>
-          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <Label>About me</Label>
+          <FadeIn>
+            <p>My name is Andrew Wang, and I am a web developer who specializes in working on the front end.</p>
+          </FadeIn>
+          <FadeIn>
+            <p>I enjoy uncovering and solving design problems, developing robust web applications, as well as creating vivid web experiences. Driven by a passion for web technologies, I am always looking to learn new frameworks, languages, and paradigms.</p>
+          </FadeIn>
         </div>
       </div>
-      <div className="block service-spectrum">
+      {/* END ABOUT */}
+      {/* BEGIN SERVICES */}
+      <div className="block">
         <div className="wrap">
-          <h2>Service spectrum</h2>
-          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <Label>Services & skillset</Label>
+          <div className="section">
+            <AnimatedSVG
+              fullyEnterViewport={handleEnterViewport}
+              src={rwd}
+              alt="Website Creation"
+            />
+            <div className="copy">
+              <BlockRevealer
+                fullyEnterViewport={handleEnterViewport}
+                bgc="#86eaef"
+              >
+                <h5>Website Creation</h5>
+              </BlockRevealer>
+              <FadeIn>
+                <p>
+                  Using modern browser technologies, I can construct websites, while fixing and avoiding common cross-browser compatibility issues. I have experience working on user interfaces, and I possess an eye for detail when it comes to user interaction and user experience.
+                </p>
+              </FadeIn>
+            </div>
+          </div>
+          <div className="section">
+            <AnimatedSVG
+              fullyEnterViewport={handleEnterViewport}
+              src={apps}
+              alt="Web Application Development"
+            />
+            <div className="copy">
+              <BlockRevealer
+                fullyEnterViewport={handleEnterViewport}
+                bgc="#86eaef"
+              >
+                <h5>Web Application Development</h5>
+              </BlockRevealer>
+              <FadeIn>
+                <p>
+                  I can work collaboratively with designers to create front-end elements for web applications and also with back-end engineers to implement application features. My understanding of front-end technologies allows me to build efficient front-end systems and helps me optimize for client-side performance.
+                </p>
+              </FadeIn>
+            </div>
+          </div>
+          <div className="section">
+            <AnimatedSVG
+              fullyEnterViewport={handleEnterViewport}
+              src={core}
+              alt="Technical Expertise"
+            />
+            <div className="copy">
+              <BlockRevealer
+                fullyEnterViewport={handleEnterViewport}
+                bgc="#86eaef"
+              >
+                <h5>Technical Expertise</h5>
+              </BlockRevealer>
+              <FadeIn>
+                <p>
+                  Here are some of the tools, libraries, and frameworks that I am comfortable with using:
+                </p>
+              </FadeIn>
+              <div id="skills">
+                <FadeIn>
+                  <h6>Core skillset</h6>
+                  <ul>
+                    <li>HTML5</li>
+                    <li>CSS3, SCSS, PostCSS</li>
+                    <li>JavaScript (ES6), jQuery</li>
+                  </ul>
+                </FadeIn>
+                <FadeIn>
+                  <h6>Working knowledge</h6>
+                  <ul>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>WordPress</li>
+                  </ul>
+                </FadeIn>
+                <FadeIn>
+                  <h6>Tools</h6>
+                  <ul>
+                    <li>Git</li>
+                    <li>Gulp, Webpack</li>
+                    <li>Adobe Creative Suite</li>
+                  </ul>
+                </FadeIn>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      {/* END SERVICES */}
     </div>
   );
 }
