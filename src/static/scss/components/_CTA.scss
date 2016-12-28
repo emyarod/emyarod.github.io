@@ -1,16 +1,59 @@
 .cta {
-  background-color: lighten(black, 60);
+  background-color: $CTA;
 
   &__buttons {
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
 
     .btn {
-      margin: .3125rem 0; // 5px
+      margin: .3125rem 0;
     }
+  }
+}
 
-    &--home {
-      flex-direction: column;
+// 576
+@media screen and (min-width: map-get($breakpoints, sm)) {
+  .cta__buttons--home,
+  .cta__buttons--portfolioNav {
+    flex-direction: row;
+
+    .btn {
+      width: 50%;
+
+      &:first-of-type { margin-right: -2px; }
+      &:last-of-type { margin-left: -2px; }
+    }
+  }
+}
+
+// 768
+// @media screen and (min-width: map-get($breakpoints, md)) {}
+
+// 992
+// @media screen and (min-width: map-get($breakpoints, lg)) {}
+
+// 1200
+@media screen and (min-width: map-get($breakpoints, xl)) {
+  .cta__wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .cta__text--home,
+  .cta__text--work {
+    width: 40%;
+  }
+
+  .cta__buttons {
+    align-items: center;
+    width: 55%;
+
+
+    // full width buttons for work nav
+    &--portfolioNav {
+      width: 100%;
     }
   }
 }
