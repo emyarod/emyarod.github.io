@@ -1,20 +1,30 @@
 import React from 'react';
 import { Match, Link } from 'react-router';
-import projectData from '../data/projectData';
+import Jumbotron from './Jumbotron';
+import Label from './Label';
 import Project from './Project';
+import BlockRevealer from './BlockRevealer';
+import BlockRevealParagraph from './BlockRevealParagraph';
+import handleEnterViewport from '../config/utils';
+import projectData from '../data/projectData';
+import PortfolioImg from '../static/img/Portfolio/portfolio.jpg';
 
 export default function Portfolio({ pathname }) {
   return (
     <div className="portfolio">
-      <Match pattern={`${pathname}/:path`} component={Project} />
+      {/* portfolio landing page */}
       <Match
         pattern={pathname}
         render={() => (
           <div>
-            <div className="jumbotron">
+            <Jumbotron pathname={pathname} img={PortfolioImg}>
               <h1>Portfolio</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+              <div>
+                <p className="sb blurb">
+                  Have a look through a small selection of some of my previous work.
+                </p>
+              </div>
+            </Jumbotron>
             <div className="block">
               <div className="wrap">
                 <h3>Selected projects</h3>
@@ -35,6 +45,9 @@ export default function Portfolio({ pathname }) {
         )}
         exactly
       />
+
+      {/* portfolio project */}
+      <Match pattern={`${pathname}/:path`} component={Project} />
     </div>
   );
 };
