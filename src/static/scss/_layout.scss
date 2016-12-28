@@ -1,8 +1,48 @@
 .block {
-  padding: 30px 0;
+  padding: rem(30) 0;
+  background-color: $light-background;
+
+  &.dark {
+    background-color: $dark-background;
+    color: $white;
+  }
 }
 
 .wrap {
-  width: 90%;
+  padding: 0 rem(15);
   margin: 0 auto;
+  width: 100%;
+}
+
+// 576
+@media screen and (min-width: map-get($breakpoints, sm)) {
+  .block {
+    padding: rem(50) 0;
+  }
+
+  .wrap {
+    width: map-get($container-widths, sm);
+  }
+}
+
+// 768
+@media screen and (min-width: map-get($breakpoints, md)) {
+  .wrap {
+    width: map-get($container-widths, md);
+  }
+}
+
+// 992
+@media screen and (min-width: map-get($breakpoints, lg)) {
+  .wrap {
+    width: map-get($container-widths, lg);
+  }
+}
+
+// 1200
+@media screen and (min-width: map-get($breakpoints, xl)) {
+  .wrap {
+    width: map-get($container-widths, xl);
+    padding: 0 rem(30);
+  }
 }
