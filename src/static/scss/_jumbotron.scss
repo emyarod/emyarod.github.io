@@ -1,3 +1,46 @@
 .jumbotron {
-  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  min-height: 20rem;
+  padding: rem(30) 0;
+}
+
+.landing {
+  padding: rem(40) 0;
+}
+
+// 576
+@media screen and (min-width: map-get($breakpoints, sm)) {
+  .landing {
+    min-height: 30rem;
+  }
+}
+
+// 768
+// @media screen and (min-width: map-get($breakpoints, md)) {}
+
+// 992
+@media screen and (min-width: map-get($breakpoints, lg)) {
+  .landing {
+    min-height: 35rem;
+  }
+
+  .blurb {
+    width: 65%;
+  }
+}
+
+// 1200
+@media screen and (min-width: map-get($breakpoints, xl)) {
+  .jumbotron {
+    min-height: 30rem;
+  }
+
+  .landing {
+    min-height: calc(100vh - 100px);
+  }
+
+  .blurb {
+    width: 75%;
+  }
 }
