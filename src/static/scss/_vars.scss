@@ -1,7 +1,7 @@
 $black: #000;
 $white: #fff;
 
-$dark-background: #303030;
+$dark-background: #1a1a1a;
 $light-background: #fafafa;
 
 $text-color: rgba($black, .87);
@@ -12,16 +12,13 @@ $green: #00b259;
 $yellow: #ffd464;
 $violet: #c392ff;
 $CTA: #86eaef;
-// $CTA: #ed9e87;
 
 // link colors
 $link-color: $blue;
 $link-hover-color: #0d30ff;
 $link-active-color: #bc001c;
-// $link-visited-color: #5400bc;
 
 $nav-link-color: $white;
 $nav-link-hover-color: $yellow;
-$nav-link-active-color: $link-active-color;
 
 $animation-curve: cubic-bezier(.4,0,.2,1);
