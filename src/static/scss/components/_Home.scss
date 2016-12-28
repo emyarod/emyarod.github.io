@@ -1,20 +1,72 @@
 .landing {
   background-color: #00b259;
-  background-image:
-  linear-gradient(30deg, #32c17a 12%, transparent 12.5%, transparent 87%, #32c17a 87.5%, #32c17a),
-  linear-gradient(150deg, #32c17a 12%, transparent 12.5%, transparent 87%, #32c17a 87.5%, #32c17a),
-  linear-gradient(30deg, #32c17a 12%, transparent 12.5%, transparent 87%, #32c17a 87.5%, #32c17a),
-  linear-gradient(150deg, #32c17a 12%, transparent 12.5%, transparent 87%, #32c17a 87.5%, #32c17a),
-  linear-gradient(60deg, #008e47 25%, transparent 25.5%, transparent 75%, #008e47 75%, #008e47),
-  linear-gradient(60deg, #008e47 25%, transparent 25.5%, transparent 75%, #008e47 75%, #008e47);
-  background-size: 5rem 8.75rem;
-  background-position: 0 0, 0 0, 2.5rem 4.375rem, 2.5rem 4.375rem, 0 0, 2.5rem 4.375rem;
+}
+
+// sections
+.section {
+  margin: rem(25) 0 0;
+
+  .svg-container {
+    display: block;
+
+    svg {
+      max-height: 8rem;
+    }
+  }
+
+  .copy {
+    padding-top: .5rem;
+  }
 }
 
 // Technical Expertise section
-.skills {
+#skills {
   ul {
-    padding: 0;
+    padding-left: 1rem;
     list-style-type: none;
   }
 }
+
+// 576
+@media screen and (min-width: map-get($breakpoints, sm)) {
+  .section {
+    display: flex;
+    align-items: center;
+
+    .svg-container {
+      width: 35%;
+
+      svg {
+        max-height: 9rem;
+      }
+    }
+
+    .copy {
+      width: 65%;
+      margin: 0;
+      padding: 0 0 0 1rem;
+    }
+  }
+}
+
+// 768
+@media screen and (min-width: map-get($breakpoints, md)) {
+  #skills {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      padding: 0;
+    }
+  }
+
+  .section {
+    padding: 1rem;
+  }
+}
+
+// 992
+// @media screen and (min-width: map-get($breakpoints, lg)) {}
+
+// 1200
+// @media screen and (min-width: map-get($breakpoints, xl)) {}
