@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <div className="block footer">
       <div className="wrap">
-        <div className="footer-nav">
+        <nav className="nav">
           <Link to="/">Home</Link>
           <Link to="/portfolio">Portfolio</Link>
           <Link to="/contact">Contact</Link>
