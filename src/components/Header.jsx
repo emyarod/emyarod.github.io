@@ -20,7 +20,6 @@ export default function Header() {
               </Isvg>
             </Link>
             <nav className="nav">
-              {/* FIXME: activeStyle/activeClassName */}
               <Link to="/">Home</Link>
               <Link to="/portfolio" activeClassName="active">Portfolio</Link>
               <Link to="/contact" activeClassName="active">Contact</Link>
