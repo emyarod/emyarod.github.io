@@ -11,13 +11,14 @@ export default function Header() {
       {() => (
         <Headroom>
           <header className="App-header">
-            <Isvg
-              className="Wang"
-              src={logo}
-              uniquifyIDs={false}
-              alt="Home"
-            >
-            </Isvg>
+            <Link to="/" className="Wang">
+              <Isvg
+                src={logo}
+                uniquifyIDs={false}
+                alt="Home"
+              >
+              </Isvg>
+            </Link>
             <nav className="nav">
               {/* FIXME: activeStyle/activeClassName */}
               <Link to="/">Home</Link>

@@ -42,3 +42,7 @@ export default function Contact({ pathname }) {
     </div>
   );
 }
+
+Contact.PropTypes = {
+  pathname: React.PropTypes.string.isRequired,
+};
