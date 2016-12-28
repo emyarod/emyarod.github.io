@@ -8,7 +8,7 @@ export default function SFList() {
       <p>
         SF List is a simple static site with command notations for each character in <em>Super Street Fighter II Turbo</em>, <em>Street Fighter III: 3rd Strike</em>, <em>Ultra Street Fighter IV</em> (and Omega Edition), and <em>Street Fighter V</em>.
       </p>
-      <figure>
+      <figure className="figure">
         <img className="mockup" alt={"SF List"} src={sflistimg} />
         <figcaption>A character page in SF List</figcaption>
       </figure>

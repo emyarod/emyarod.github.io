@@ -11,7 +11,7 @@ export default function Flattish() {
       <p>
         Flattish also aims to work seamlessly with the popular browser extension, <a href="http://redditenhancementsuite.com/">Reddit Enhancement Suite</a>, by integrating its nightmode feature and extending its styles to include RES-added elements. Users can customize Flattish with the <a href="https://emyarod.github.io/flattish/">theme editor application</a>, which offers addons including options for a sidebar image, pinned sidebar topics, and up to 36 rotating header images.
       </p>
-      <figure>
+      <figure className="figure">
         <img className="mockup" alt={"SF List"} src={flattishimg} />
       </figure>
       <h4 className="label">The Process</h4>

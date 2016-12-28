@@ -14,7 +14,7 @@ export default function Refuge() {
       <p>
         A simple text form allows users to create new note components, which are individually editable or removable. Actions such as creating, updating, or editing notes also make use of Node.js's EventEmitter API, notifying the user of any changes to their note repositories.
       </p>
-      <figure>
+      <figure className="figure">
         <img className="mockup" alt={"Refuge"} src={refugeimg} />
       </figure>
       <h4 className="label">The Process</h4>

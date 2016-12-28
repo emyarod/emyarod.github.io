@@ -1,4 +1,4 @@
-figure {
+.figure {
   position: relative;
 
   &::before {
@@ -9,10 +9,10 @@ figure {
     bottom: 0;
     left: 0;
   }
-}
 
-figcaption {
-  font-style: italic;
-  text-align: center;
-  color: $secondary-text-color;
+  figcaption {
+    font-style: italic;
+    text-align: center;
+    color: $secondary-text-color;
+  }
 }
