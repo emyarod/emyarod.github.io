@@ -1,5 +1,7 @@
 import React from 'react';
 import Jumbotron from './Jumbotron';
+import Label from './Label';
+import ContactImg from '../static/img/Contact/contact.jpg';
 
 export default function Contact({ pathname }) {
   return (
@@ -18,17 +20,17 @@ export default function Contact({ pathname }) {
             method="POST"
           >
             <div className="form-control">
-              <label className="label" htmlFor="inputName">Name</label>
+              <Label className="label" htmlFor="inputName">Name</Label>
               <input id="inputName" type="text" name="name" required />
             </div>
             <div className="form-control">
-              <label className="label" htmlFor="inputEmail">
+              <Label className="label" htmlFor="inputEmail">
                 Email address
-              </label>
+              </Label>
               <input id="inputEmail" type="email" name="_replyto" required />
             </div>
             <div className="form-control">
-              <label className="label" htmlFor="inputMessage">Message</label>
+              <Label className="label" htmlFor="inputMessage">Message</Label>
               <textarea id="inputMessage" name="messsage" rows="5" required />
             </div>
             <input type="text" name="_gotcha" style={{'display': 'none'}} />
