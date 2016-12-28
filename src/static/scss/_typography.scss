@@ -1,3 +1,110 @@
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+html {
+  font-size: 16px;
+  font-family: 'a', sans-serif;
+  line-height: 1.5;
+  color: $text-color;
+}
+
+h1, h2, h3, h4, h5, h6 { margin: 0 0 .5rem; }
+
+.paragraph + .paragraph {
+  margin-top: 1.4rem;
+}
+
+.fadein {
+  opacity: 0;
+
+  &-animate {
+    animation: 1s $animation-curve textFadeIn forwards;
+  }
+}
+
+// minor third (ratio of 1.2)
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2.125rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: transition-default();
+
+  &:hover { color: $link-hover-color; }
+  &:active { color: $link-active-color; }
+}
+
+code,
+kbd,
+samp {
+  font-family: 'm', monospace;
+  background-color: #eee;
+  padding: .25rem;
+}
+
+.sb {
+  font-weight: 500;
+}
+
+.ms {
+  font-family: 'm', monospace;
+}
+
+.text-center {
+  text-align: center;
+}
+
+::selection {
+  background: $green;
+  color: $white;
+}
+
+// 576
+@media screen and (min-width: map-get($breakpoints, sm)) {
+  html {
+    line-height: 1.7;
+    font-size: 17px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .blurb {
+    font-size: 1.375rem;
+  }
+}
+
+// 768
+@media screen and (min-width: map-get($breakpoints, md)) {
+  html {
+    line-height: 1.875;
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+// 992
+@media screen and (min-width: map-get($breakpoints, lg)) {
+  html {
+    line-height: 2;
+    font-size: 19px;
+  }
+}
+
+// 1200
+@media screen and (min-width: map-get($breakpoints, xl)) {
+  html {
+    line-height: 2.25;
+    font-size: 20px;
+  }
+
+  .blurb {
+    font-size: 1.75rem;
+  }
 }
