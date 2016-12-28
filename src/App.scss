@@ -2,15 +2,11 @@ html {
   box-sizing: border-box;
   background-color: $light-background;
   word-wrap: break-word;
+  background-color: $black;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
-
-// FIXME: commented code
-a {
-  // text-decoration: none;
 }
