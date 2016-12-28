@@ -5,7 +5,7 @@
 }
 
 .project-tile {
-  background-color: #1a1a1a;
+  background-color: $dark-background;
   margin-top: .5rem;
   transition: transition-default();
 
@@ -14,9 +14,19 @@
     height: 100%;
     padding: 2rem;
     color: $white;
+    transition: transition-default();
+
+    h4 {
+      color: $violet;
+      transition: transition-default();
+    }
 
     &:hover {
       color: $link-color;
+
+      h4 {
+        color: $link-color;
+      }
     }
   }
 
