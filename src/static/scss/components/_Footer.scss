@@ -1,14 +1,33 @@
 .footer {
-  background-color: #000;
+  background-color: $black;
+
+  .nav {
+    width: 75%;
+    margin: 1rem auto 2rem;
+    font-size: .75rem;
+  }
 
   small {
     display: block;
-    margin: 1rem;
-    color: rgba(#fff, .7);
+    margin: 0 2rem 2rem;
+    color: rgba($white, .7);
   }
+}
 
-  &-nav {
-    display: flex;
-    justify-content: space-around;
+.social {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin: 2em auto;
+
+  .icon {
+    height: 1rem;
+    width: 1rem;
+    fill: rgba($white, .7);
+    transition: transition-default();
+
+    &:hover {
+      fill: $white;
+    }
   }
 }
