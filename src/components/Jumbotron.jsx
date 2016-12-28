@@ -42,3 +42,11 @@ export default function Jumbotron({ bgp, pathname, landing, img, children }) {
     </FadeIn>
   );
 }
+
+Jumbotron.PropTypes = {
+  bgp: React.PropTypes.string,
+  pathname: React.PropTypes.string.isRequired,
+  landing: React.PropTypes.string,
+  img: React.PropTypes.node,
+  children: React.PropTypes.node.isRequired,
+};

@@ -38,3 +38,7 @@ export default function Portfolio({ pathname }) {
     </div>
   );
 };
+
+Portfolio.PropTypes = {
+  pathname: React.PropTypes.string.isRequired,
+};

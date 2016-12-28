@@ -28,3 +28,10 @@ export default Watch(props => {
     </div>
   );
 });
+
+Watch.PropTypes = {
+  class: React.PropTypes.string,
+  animationDelay: React.PropTypes.number,
+  bgc: React.PropTypes.string,
+  children: React.PropTypes.node.isRequired,
+};

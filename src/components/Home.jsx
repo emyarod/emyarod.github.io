@@ -22,3 +22,7 @@ export default function Home() {
     </div>
   );
 }
+
+Home.PropTypes = {
+  pathname: React.PropTypes.string.isRequired,
+};

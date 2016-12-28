@@ -100,3 +100,7 @@ export default function Project({ params }) {
     </div>
   );
 };
+
+Project.PropTypes = {
+  params: React.PropTypes.object.isRequired,
+};

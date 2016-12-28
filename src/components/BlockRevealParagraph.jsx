@@ -14,3 +14,9 @@ export default function Paragraph(props) {
     </BlockRevealer>
   );
 };
+
+Paragraph.PropTypes = {
+  animationDelay: React.PropTypes.number,
+  bgc: React.PropTypes.string,
+  children: React.PropTypes.node.isRequired,
+};

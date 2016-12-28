@@ -12,3 +12,8 @@ export default Watch(({ src, alt }) => {
     </div>
   );
 });
+
+Watch.PropTypes = {
+  src: React.PropTypes.node.isRequired,
+  alt: React.PropTypes.string.isRequired,
+};

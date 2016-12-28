@@ -7,3 +7,7 @@ export default function Icon({ icon }) {
     </svg>
   );
 };
+
+Icon.PropTypes = {
+  icon: React.PropTypes.string.isRequired,
+};
