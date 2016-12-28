@@ -27,18 +27,26 @@ export default function Portfolio({ pathname }) {
             </Jumbotron>
             <div className="block">
               <div className="wrap">
-                <h3>Selected projects</h3>
-                {/* TODO: bricklayer */}
-                {
-                  projectData.map((project, i) => (
-                    // FIXME: index as key
-                    <div key={i}>
-                      <Link to={`${pathname}/${project.path}`}>
-                        {project.name}
-                      </Link>
-                    </div>
-                  ))
-                }
+                <Label>Selected projects</Label>
+                <div className="tiles">
+                  {
+                    projectData.map((project, i) => (
+                      <div key={project.path} className="project-tile">
+                        <Link to={`${pathname}/${project.path}`}>
+                          <BlockRevealer
+                            enterViewport={handleEnterViewport}
+                            bgc="#c392ff"
+                          >
+                            <h4>{project.name}</h4>
+                          </BlockRevealer>
+                          <BlockRevealParagraph bgc="#c392ff">
+                            {project.jumbotronContent.blurb}
+                          </BlockRevealParagraph>
+                        </Link>
+                      </div>
+                    ))
+                  }
+                </div>
               </div>
             </div>
           </div>
