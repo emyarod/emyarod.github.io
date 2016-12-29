@@ -4,6 +4,8 @@ import Jumbotron from './Jumbotron';
 import Chip from './Chip';
 import Icon from './Icons';
 import iconPaths from '../data/iconPaths';
+import BlockRevealer from './BlockRevealer';
+import handleEnterViewport from '../config/utils';
 
 export default function Project({ params }) {
   const {
@@ -16,8 +18,12 @@ export default function Project({ params }) {
   return (
     <div className="project">
       <Jumbotron pathname={params.path} img={img} bgp={bgp}>
-        <h1>{name}</h1>
-        <p className="sb blurb">{blurb}</p>
+        <BlockRevealer enterViewport={handleEnterViewport}>
+          <h1>{name}</h1>
+        </BlockRevealer>
+        <BlockRevealer enterViewport={handleEnterViewport} animationDelay={.25}>
+          <p className="sb blurb">{blurb}</p>
+        </BlockRevealer>
       </Jumbotron>
       <div className="block">
         <div className="wrap project-details">

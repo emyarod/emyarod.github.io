@@ -18,12 +18,17 @@ export default function Portfolio({ pathname }) {
         render={() => (
           <div>
             <Jumbotron pathname={pathname} img={PortfolioImg}>
-              <h1>Portfolio</h1>
-              <div>
+              <BlockRevealer enterViewport={handleEnterViewport}>
+                <h1>Portfolio</h1>
+              </BlockRevealer>
+              <BlockRevealer
+                enterViewport={handleEnterViewport}
+                animationDelay={.25}
+              >
                 <p className="sb blurb">
                   Have a look through a small selection of some of my previous work.
                 </p>
-              </div>
+              </BlockRevealer>
             </Jumbotron>
             <div className="block">
               <div className="wrap">

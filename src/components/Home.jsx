@@ -13,10 +13,14 @@ export default function Home({ pathname }) {
   return (
     <div className="home">
       <Jumbotron pathname={pathname} landing>
-        <h1>Andrew Wang</h1>
-        <h5 className="sb blurb">
-          Front-end web developer based in the Bay Area
-        </h5>
+        <BlockRevealer enterViewport={handleEnterViewport}>
+          <h1>Andrew Wang</h1>
+        </BlockRevealer>
+        <BlockRevealer enterViewport={handleEnterViewport} animationDelay={.25}>
+          <h5 className="sb blurb">
+            Front-end web developer based in the Bay Area
+          </h5>
+        </BlockRevealer>
       </Jumbotron>
       {/* BEGIN ABOUT */}
       <div className="block dark">
