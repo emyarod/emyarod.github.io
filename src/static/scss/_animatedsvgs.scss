@@ -7,7 +7,7 @@
 #bg,
 #Layer_2 {
   circle {
-   fill: $CTA;
+   fill: $dark-background;
  }
 }
 
@@ -28,7 +28,7 @@
   }
   100% {
     stroke-dashoffset: 0;
-    fill: #00b259;
+    fill: $green;
   }
 }
 
@@ -64,25 +64,37 @@ $device-offsets: (
   }
   100% {
     stroke-dashoffset: 0;
-    fill: #17d8e5;
+    fill: $CTA;
   }
+}
+
+#desktop-base,
+#desktop-neck,
+#laptop-base {
+  stroke: rgba($white, .54);
+  fill: $white;
 }
 
 @each $device, $device-map in $device-offsets {
   @each $element, $offset in $device-map {
+    ##{$device}-display {
+      stroke: rgba($white, .54);
+      fill: $dark-background;
+    }
+
     ##{$device}-#{$element} {
       stroke-dashoffset: $offset;
       stroke-dasharray: $offset;
 
       @if $element == 'jumbotron' {
         animation: jumbotron 4s $animation-curve forwards;
-        stroke: #00b259;
+        stroke: $green;
       }
 
       @if $element == 'content' {
         rect {
           animation: content 2s $animation-curve forwards 1s paused;
-          stroke: #17d8e5;
+          stroke: $CTA;
         }
       }
 
@@ -90,7 +102,9 @@ $device-offsets: (
         animation: stroke 1s $animation-curve forwards 2s;
 
         line {
-          stroke: rgba($black, .87);
+          stroke: rgba($white, .87);
+          // stroke: #f24e1e;
+          // stroke: $green;
         }
       }
 
@@ -120,19 +134,19 @@ $fades: (
   '#toolbar': (
     name: 'toolbar',
     stroke-dashoffset: 288,
-    stroke-initial: $black,
-    stroke-final: #3649e1,
+    stroke-initial: rgba($white, .74),
+    stroke-final: #f24e1e,
     fill-initial: transparent,
-    fill-final: #3649e1,
+    fill-final: #f24e1e,
     delay: null,
   ),
   '#frame': (
     name: 'frame',
     stroke-dashoffset: 1140.705,
-    stroke-initial: $black,
-    stroke-final: #3649e1,
+    stroke-initial: rgba($white, .74),
+    stroke-final: #f24e1e,
     fill-initial: transparent,
-    fill-final: rgba($black, .54),
+    fill-final: rgba($dark-background, .54),
     delay: null,
   ),
   '#close': (
@@ -183,19 +197,19 @@ $fades: (
   '#quad': (
     name: 'quad',
     stroke-dashoffset: 107,
-    stroke-initial: $black,
-    stroke-final: $black,
-    fill-initial: $light-background,
-    fill-final: $black,
+    stroke-initial: $violet,
+    stroke-final: $violet,
+    fill-initial: $dark-background,
+    fill-final: $violet,
     delay: null,
   ),
   '#penta path': (
     name: 'penta',
     stroke-dashoffset: 209.457,
-    stroke-initial: $black,
-    stroke-final: $black,
-    fill-initial: $light-background,
-    fill-final: $black,
+    stroke-initial: $violet,
+    stroke-final: $violet,
+    fill-initial: $dark-background,
+    fill-final: $violet,
     delay: null,
   ),
   '#rightleg path': (
@@ -203,7 +217,7 @@ $fades: (
     stroke-dashoffset: 432.839,
     stroke-initial: #e0e0e0,
     stroke-final: #e0e0e0,
-    fill-initial: $light-background,
+    fill-initial: $dark-background,
     fill-final: #e0e0e0,
     delay: 1s,
   ),
@@ -212,23 +226,23 @@ $fades: (
     stroke-dashoffset: 433.924,
     stroke-initial: #e0e0e0,
     stroke-final: #e0e0e0,
-    fill-initial: $light-background,
+    fill-initial: $dark-background,
     fill-final: #e0e0e0,
     delay: 1s,
   ),
   '#circle': (
     name: 'circle',
     stroke-dashoffset: 66.944,
-    stroke-initial: $black,
-    stroke-final: $black,
-    fill-initial: $light-background,
-    fill-final: $light-background,
+    stroke-initial: $violet,
+    stroke-final: $violet,
+    fill-initial: $dark-background,
+    fill-final: $dark-background,
     delay: 1s,
   ),
   '#bar': (
     name: 'bar',
     stroke-dashoffset: 131,
-    stroke-initial: $black,
+    stroke-initial: $violet,
     stroke-final: #e0e0e0,
     fill-initial: transparent,
     fill-final: transparent,
@@ -240,7 +254,7 @@ $fades: (
     stroke-initial: transparent,
     stroke-final: transparent,
     fill-initial: transparent,
-    fill-final: $black,
+    fill-final: $violet,
     delay: 2s,
   ),
   '#rightbrace': (
@@ -249,7 +263,7 @@ $fades: (
     stroke-initial: transparent,
     stroke-final: transparent,
     fill-initial: transparent,
-    fill-final: $black,
+    fill-final: $violet,
     delay: 2s,
   ),
 );
