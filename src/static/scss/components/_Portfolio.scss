@@ -35,8 +35,10 @@
   }
 }
 
-@media screen and (min-width: map-get($breakpoints, sm)) {}
+// 576
+// @media screen and (min-width: map-get($breakpoints, sm)) {}
 
+// 768
 @media screen and (min-width: map-get($breakpoints, md)) {
   .tiles {
     flex-flow: row wrap;
@@ -47,8 +49,10 @@
   }
 }
 
-@media screen and (min-width: map-get($breakpoints, lg)) {}
+// 992
+// @media screen and (min-width: map-get($breakpoints, lg)) {}
 
+// 1200
 @media screen and (min-width: map-get($breakpoints, xl)) {
   .project-tile {
     width: calc((100% / 3) - .5rem);
