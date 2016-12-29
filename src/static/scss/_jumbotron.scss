@@ -26,7 +26,7 @@
   }
 
   .blurb {
-    width: 65%;
+    max-width: 50vw;
   }
 }
 
@@ -40,7 +40,9 @@
     min-height: calc(100vh - 100px);
   }
 
+  .jumbotron h1,
   .blurb {
-    width: 75%;
+    padding: 0 .5rem;
+    background-color: rgba($white, .74);
   }
 }
