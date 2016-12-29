@@ -1,88 +1,216 @@
-import Project1 from '../components/projects/Project-1';
-import Project2 from '../components/projects/Project-2';
-import Project3 from '../components/projects/Project-3';
+import Portfolio from '../components/projects/Portfolio';
+import Refuge from '../components/projects/Refuge';
+import Koreaboo from '../components/projects/Koreaboo';
+import Flattish from '../components/projects/Flattish';
+import Discorcabot from '../components/projects/Discorcabot';
+import SFList from '../components/projects/SFList';
+import Smurf from '../components/projects/Smurf';
+import portfolioimg from '../static/img/Portfolio/portfolio/jumbotron.jpg';
+import refugeimg from '../static/img/Portfolio/refuge/jumbotron.jpg';
+import koreabooimg from '../static/img/Portfolio/koreaboo/jumbotron.jpg';
+import flattishimg from '../static/img/Portfolio/flattish/jumbotron.jpg';
+import discorcabotimg from '../static/img/Portfolio/discorcabot/jumbotron.jpg';
+import smurfimg from '../static/img/Portfolio/smurf/jumbotron.jpg';
+import sflistimg from '../static/img/Portfolio/sflist/jumbotron.jpg';
 
 const projectData = [
   {
-    name: 'Project 1',
-    path: 'project-1',
+    name: 'Portfolio',
+    path: 'portfolio',
     jumbotronContent: {
-      img: 'jumbotronImg',
-      blurb: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      img: portfolioimg,
+      blurb: 'Personal portfolio website.',
     },
     summary: {
-      type: 'Web Application',
+      type: 'Website',
       role: 'Design & Development',
       tools: [
-        'Tool 1',
-        'Tool 2',
-        'Tool 3',
-        'Tool 4',
-        'Tech 1',
-        'Tech 2',
-        'Tech 3',
-        'Tech 4',
+        'React',
+        'React Router',
+        ['Sass'],
+        'PostCSS',
+        'Webpack',
+        'Yarn',
+        'Babel',
+        'Adobe Illustrator',
       ],
-      projectLink: {
-        text: 'text',
-        href: 'href',
+      projectSource: {
+        text: 'View source on GitHub',
+        href: 'https://github.com/emyarod/afw/',
       },
     },
-    details: Project1,
+    details: Portfolio,
   },
+
+  // Refuge
   {
-    name: 'Project 2',
-    path: 'project-2',
+    name: 'Refuge',
+    path: 'refuge',
     jumbotronContent: {
-      img: 'jumbotronImg',
-      blurb: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      img: refugeimg,
+      blurb: 'A note taking application, written in React.',
+      bgp: 'center 70%',
     },
     summary: {
       type: 'Web Application',
       role: 'Design & Development',
       tools: [
-        'Tool 1',
-        'Tool 2',
-        'Tool 3',
-        'Tool 4',
-        'Tech 1',
-        'Tech 2',
-        'Tech 3',
-        'Tech 4',
+        ['React'],
+        'React Router',
+        'Firebase',
+        'Node.js',
+        ['Sass'],
+        'PostCSS',
       ],
+      projectSource: {
+        text: 'View source on GitHub',
+        href: 'https://github.com/emyarod/refuge',
+      },
       projectLink: {
-        text: 'text',
-        href: 'href',
+        text: 'See Refuge in action',
+        href: 'https://refuge-fed63.firebaseapp.com/',
       },
     },
-    details: Project2,
+    details: Refuge,
   },
+
+  // Koreaboo
   {
-    name: 'Project 3',
-    path: 'project-3',
+    name: 'Koreaboo',
+    path: 'koreaboo',
     jumbotronContent: {
-      img: 'jumbotronImg',
-      blurb: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      img: koreabooimg,
+      blurb: 'Website for a Korean media and entertainment news company.',
+      bgp: 'center 60%',
+    },
+    summary: {
+      type: 'Website',
+      role: 'Development',
+      tools: [
+        ['Wordpress'],
+        ['Sass'],
+        ['Gulp'],
+      ],
+    },
+    details: Koreaboo,
+  },
+
+  // Flattish
+  {
+    name: 'Flattish',
+    path: 'flattish',
+    jumbotronContent: {
+      img: flattishimg,
+      blurb: 'Material Design influenced CSS stylesheet generator for Reddit.',
     },
     summary: {
       type: 'Web Application',
       role: 'Design & Development',
       tools: [
-        'Tool 1',
-        'Tool 2',
-        'Tool 3',
-        'Tool 4',
-        'Tech 1',
-        'Tech 2',
-        'Tech 3',
-        'Tech 4',
+        'Node.js',
+        ['Sass'],
+        'Babel',
+        'Webpack',
+        'jQuery',
+        'Adobe Photoshop',
       ],
+      projectSource: {
+        text: 'View source on GitHub',
+        href: 'https://github.com/emyarod/flattish/',
+      },
       projectLink: {
-        text: 'text',
-        href: 'href',
+        text: 'See Flattish in action',
+        href: 'https://emyarod.github.io/flattish/',
       },
     },
-    details: Project3,
+    details: Flattish,
+  },
+
+  // Discorcabot
+  {
+    name: 'Discorcabot',
+    path: 'discorcabot',
+    jumbotronContent: {
+      img: discorcabotimg,
+      blurb: 'A general purpose Discord chat bot.',
+      bgp: 'center 50%',
+    },
+    summary: {
+      type: 'Web Application',
+      role: 'Development',
+      tools: [
+        'Node.js',
+        ['Gulp'],
+        'Babel',
+        'Webpack',
+      ],
+      projectSource: {
+        text: 'View source on GitHub',
+        href: 'https://github.com/emyarod/discorcabot',
+      },
+    },
+    details: Discorcabot,
+  },
+
+  // Smurf
+  {
+    name: 'Steam Checker',
+    path: 'smurf',
+    jumbotronContent: {
+      img: smurfimg,
+      blurb: 'A Steam account and game statistics checker for Counter-Strike: Global Offensive players.',
+    },
+    summary: {
+      type: 'Web Application',
+      role: 'Design & Development',
+      tools: [
+        'Node.js',
+        'Babel',
+        ['Gulp'],
+        'Express.js',
+        'Handlebars.js',
+      ],
+      projectSource: {
+        text: 'View source on GitHub',
+        href: 'https://github.com/emyarod/smurf',
+      },
+      projectLink: {
+        text: 'See Steam Checker in action',
+        href: 'http://smurf.orca.ninja/',
+      },
+    },
+    details: Smurf,
+  },
+
+  // SFList
+  {
+    name: 'SF List',
+    path: 'sflist',
+    jumbotronContent: {
+      img: sflistimg,
+      blurb: 'A Street Fighter move list repository.',
+      bgp: 'center 50%',
+    },
+    summary: {
+      type: 'Web Application',
+      role: 'Development',
+      tools: [
+        ['Jekyll'],
+        'YAML',
+        'jQuery',
+        ['Sass'],
+        'Adobe Photoshop',
+      ],
+      projectSource: {
+        text: 'View source on GitHub',
+        href: 'https://github.com/emyarod/discorcabot',
+      },
+      projectLink: {
+        text: 'See SF List in action',
+        href: 'https://emyarod.github.io/sflist/',
+      },
+    },
+    details: SFList,
   },
 ];
 
