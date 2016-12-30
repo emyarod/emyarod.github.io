@@ -4,8 +4,9 @@ import FadeIn from './FadeIn';
 
 export default function Jumbotron({ bgp, pathname, landing, img, children }) {
   const styles = {
-    backgroundSize: 'cover',
+    backgroundSize: landing ? null : 'cover',
     backgroundPosition: bgp ? bgp : 'center 20%',
+    backgroundColor: landing ? '#86eaef' : null,
   };
 
   const scrim = `
