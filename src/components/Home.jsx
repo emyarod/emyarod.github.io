@@ -5,6 +5,7 @@ import FadeIn from './FadeIn';
 import BlockRevealer from './BlockRevealer';
 import handleEnterViewport from '../config/utils';
 import AnimatedSVG from './AnimatedSVG';
+import clouds from '../static/img/Home/clouds.svg';
 import rwd from '../static/img/Home/rwd.svg';
 import apps from '../static/img/Home/apps.svg';
 import core from '../static/img/Home/core.svg';
@@ -12,7 +13,7 @@ import core from '../static/img/Home/core.svg';
 export default function Home({ pathname }) {
   return (
     <div className="home">
-      <Jumbotron pathname={pathname} landing>
+      <Jumbotron pathname={pathname} img={clouds} landing>
         <BlockRevealer enterViewport={handleEnterViewport}>
           <h1>Andrew Wang</h1>
         </BlockRevealer>
