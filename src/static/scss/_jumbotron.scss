@@ -7,22 +7,29 @@
 
 .landing {
   padding: rem(40) 0;
+  background-size: 40%;
 }
 
 // 576
 @media screen and (min-width: map-get($breakpoints, sm)) {
   .landing {
     min-height: 30rem;
+    background-size: 30%;
   }
 }
 
 // 768
-// @media screen and (min-width: map-get($breakpoints, md)) {}
+@media screen and (min-width: map-get($breakpoints, md)) {
+  .landing {
+    background-size: 20%;
+  }
+}
 
 // 992
 @media screen and (min-width: map-get($breakpoints, lg)) {
   .landing {
     min-height: 35rem;
+    background-size: 15%;
   }
 
   .blurb {
