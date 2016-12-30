@@ -10,7 +10,7 @@ export default function Jumbotron({ bgp, pathname, landing, img, children }) {
   };
 
   const scrim = `
-    linear-gradient(to bottom,rgba(255,255,255,.8) 0,
+    linear-gradient(to bottom,rgba(255,255,255,.6) 0%,
     rgba(255,255,255,.6) 100%)
   `;
 
