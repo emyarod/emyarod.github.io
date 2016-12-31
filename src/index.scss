@@ -1,28 +1,60 @@
+@font-face {
+  font-family: 'a';
+  font-weight: 400;
+  src: url('./static/fonts/Apercu.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'a';
+  font-weight: 400;
+  font-style: italic;
+  src: url('./static/fonts/Apercu-Italic.otf') format('opentype');
+}
+
+// medium
+@font-face {
+  font-family: 'a';
+  font-weight: 500;
+  src: url('./static/fonts/Apercu-Medium.otf') format('opentype');
+}
+
+// bold
+@font-face {
+  font-family: 'a';
+  font-weight: 700;
+  src: url('./static/fonts/Apercu-Bold.otf') format('opentype');
+}
+
+// monospace
+@font-face {
+  font-family: 'm';
+  src: url('./static/fonts/ApercuPro-Mono.otf') format('opentype');
+}
+
 @import '../node_modules/normalize.css/normalize.css';
 
-html {
-  box-sizing: border-box;
-
-  // TODO: talkin bout rems?
-  font-size: 16px;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-// TODO: import partials and despecify selectors
+@import './static/scss/vars';
 @import './static/scss/utils';
 @import './static/scss/layout';
 @import './static/scss/typography';
 @import './static/scss/jumbotron';
-@import './static/scss/tags';
+@import './static/scss/chips';
+@import './static/scss/figures';
+@import './static/scss/labels';
+@import './static/scss/blockrevealer';
+@import './static/scss/images';
 @import './static/scss/buttons';
-// @import './App';
+@import './static/scss/nav';
+@import './static/scss/icons';
+@import './static/scss/animatedsvgs';
+@import './App';
 
 // import component SCSS
 @import './static/scss/components/Header';
+@import './static/scss/components/Home';
+@import './static/scss/components/Portfolio';
+@import './static/scss/components/Contact';
 @import './static/scss/components/Project';
 @import './static/scss/components/CTA';
+@import './static/scss/components/FourOhFour';
+@import './static/scss/components/Footer';
