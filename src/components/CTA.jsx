@@ -17,7 +17,7 @@ const CTAOptions = {
   },
   portfolio: {
     title: 'Like what you see?',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    subtitle: `Reach out to me, and let's discuss I can do for you.`,
     buttons() {
       return (
         <div className="cta__buttons">
@@ -32,7 +32,6 @@ const CTAOptions = {
     buttons(prev, next) {
       return (
         <div className="cta__buttons cta__buttons--portfolioNav">
-          {/* FIXME: implement scroll to top (after react-router devs push it) */}
           <Link to={`/portfolio/${prev}`} className="btn">
             ← Previous project
           </Link>
