@@ -3,10 +3,20 @@ import MediaQuery from 'react-responsive';
 import FadeIn from './FadeIn';
 
 export default function Jumbotron({ bgp, pathname, landing, img, children }) {
+  const colors = [
+    '#ed8a87',
+    '#ffd464',
+    '#00b259',
+    '#86eaef',
+    '#c392ff',
+  ];
+
   const styles = {
     backgroundSize: landing ? null : 'cover',
     backgroundPosition: bgp ? bgp : 'center 20%',
-    backgroundColor: landing ? '#86eaef' : null,
+    backgroundColor: landing
+      ? colors[Math.floor(Math.random() * colors.length)]
+      : null,
   };
 
   const scrim = `
