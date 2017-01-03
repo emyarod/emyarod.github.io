@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g id="bg">
+	<circle fill="#ED9E87" cx="250" cy="250" r="250"/>
+</g>
+<g id="desktop">
+	<g id="desktop-stand">
+
+			<rect id="desktop-base" x="197" y="275.8" stroke="#000000" stroke-width="7.091" stroke-miterlimit="10" width="64.7" height="28"/>
+		<polygon id="desktop-neck" stroke="#000000" stroke-width="6.6091" stroke-miterlimit="10" points="275.9,317.8 182.9,317.8
+			197.7,303.8 261,303.8 		"/>
+	</g>
+	<path id="desktop-display" fill="#FFFFFF" stroke="#000000" stroke-width="7.091" stroke-miterlimit="10" d="M362.7,275.8H96.1
+		c-1.6,0-2.8-1.3-2.8-2.8V125.5c0-1.6,1.3-2.8,2.8-2.8h266.6c1.6,0,2.8,1.3,2.8,2.8v147.5C365.5,274.5,364.3,275.8,362.7,275.8z"/>
+	<g id="desktop-text">
+		<g id="desktop-item-3-text">
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="263.3" y1="262.1" x2="287.3" y2="262.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="263.3" y1="248.1" x2="314.3" y2="248.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="263.3" y1="255.1" x2="320.3" y2="255.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="263.3" y1="241.1" x2="320.3" y2="241.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="263.3" y1="234.1" x2="320.3" y2="234.1"/>
+		</g>
+		<g id="desktop-item-2-text">
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="200.3" y1="262.1" x2="232.3" y2="262.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="200.3" y1="255.1" x2="257.3" y2="255.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="200.3" y1="248.1" x2="243.3" y2="248.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="200.3" y1="241.1" x2="257.3" y2="241.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="200.3" y1="234.1" x2="257.3" y2="234.1"/>
+		</g>
+		<g id="desktop-item-1-text">
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="138.3" y1="262.1" x2="195.3" y2="262.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="138.3" y1="255.1" x2="179.3" y2="255.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="138.3" y1="248.1" x2="195.3" y2="248.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="138.3" y1="241.1" x2="189.3" y2="241.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="138.3" y1="234.1" x2="178.3" y2="234.1"/>
+		</g>
+	</g>
+	<g id="desktop-content">
+
+			<rect id="desktop-item-3-image" x="264" y="193.7" fill="none" stroke="#DADADA" stroke-width="1.4182" stroke-miterlimit="10" width="56.1" height="33.6"/>
+
+			<rect id="desktop-item-2-image" x="201.4" y="193.7" fill="none" stroke="#DADADA" stroke-width="1.4182" stroke-miterlimit="10" width="56.1" height="33.6"/>
+
+			<rect id="desktop-item-1-image" x="138.7" y="193.7" fill="none" stroke="#DADADA" stroke-width="1.4182" stroke-miterlimit="10" width="56.1" height="33.6"/>
+	</g>
+
+		<rect id="desktop-jumbotron" x="138.7" y="135.4" fill="none" stroke="#DADADA" stroke-width="1.4182" stroke-miterlimit="10" width="181.4" height="53.3"/>
+</g>
+<g id="laptop">
+	<path id="laptop-display" fill="#FFFFFF" stroke="#000000" stroke-width="5.3433" stroke-miterlimit="10" d="M438.9,367.5H238
+		c-1.2,0-2.1-1-2.1-2.1V254.2c0-1.2,1-2.1,2.1-2.1h200.9c1.2,0,2.1,1,2.1,2.1v111.1C441,366.5,440,367.5,438.9,367.5z"/>
+	<path id="laptop-base" stroke="#000000" stroke-width="4.2535" stroke-miterlimit="10" d="M454.9,378.7h-233
+		c-0.9,0-1.6-0.7-1.6-1.6v-0.9c0-0.9,0.7-1.6,1.6-1.6h233c0.9,0,1.6,0.7,1.6,1.6v0.9C456.5,378,455.8,378.7,454.9,378.7z"/>
+	<g id="laptop-text">
+		<g id="laptop-item-3-text_1_">
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="365.3" y1="359.1" x2="383.3" y2="359.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="365.3" y1="347.1" x2="403.3" y2="347.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="365.3" y1="353.1" x2="408.3" y2="353.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="365.3" y1="342.1" x2="408.3" y2="342.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="365.3" y1="336.1" x2="408.3" y2="336.1"/>
+		</g>
+		<g id="laptop-item-2-text_1_">
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="317.3" y1="359.1" x2="341.3" y2="359.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="317.3" y1="353.1" x2="361.3" y2="353.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="317.3" y1="347.1" x2="349.3" y2="347.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="317.3" y1="342.1" x2="361.3" y2="342.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="317.3" y1="336.1" x2="361.3" y2="336.1"/>
+		</g>
+		<g id="laptop-item-1-text_1_">
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="270.3" y1="359.1" x2="313.3" y2="359.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="270.3" y1="353.1" x2="301.3" y2="353.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="270.3" y1="347.1" x2="313.3" y2="347.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="270.3" y1="342.1" x2="308.3" y2="342.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="270.3" y1="336.1" x2="300.3" y2="336.1"/>
+		</g>
+	</g>
+	<g id="laptop-content">
+
+			<rect id="laptop-item-3-image_1_" x="364.9" y="305.6" fill="none" stroke="#DADADA" stroke-width="1.4182" stroke-miterlimit="10" width="42.3" height="25.3"/>
+
+			<rect id="laptop-item-2-image_2_" x="317.7" y="305.6" fill="none" stroke="#DADADA" stroke-width="1.4182" stroke-miterlimit="10" width="42.3" height="25.3"/>
+
+			<rect id="laptop-item-1-image_2_" x="270.4" y="305.6" fill="none" stroke="#DADADA" stroke-width="1.4182" stroke-miterlimit="10" width="42.3" height="25.3"/>
+	</g>
+
+		<rect id="laptop-jumbotron" x="270.5" y="261.7" fill="none" stroke="#DADADA" stroke-width="1.4182" stroke-miterlimit="10" width="136.7" height="40.2"/>
+</g>
+<g id="tablet">
+	<path id="tablet-display" fill="#FFFFFF" stroke="#000000" stroke-width="7.091" stroke-miterlimit="10" d="M128.7,376.2H46.3
+		c-1.5,0-2.7-1.2-2.7-2.7V257.1c0-1.5,1.2-2.7,2.7-2.7h82.4c1.5,0,2.7,1.2,2.7,2.7v116.4C131.5,375,130.3,376.2,128.7,376.2z"/>
+	<g id="tablet-text">
+		<g id="tablet-item-2-text">
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="90.3" y1="367.1" x2="124.3" y2="367.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="90.3" y1="361.1" x2="110.3" y2="361.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="90.3" y1="356.1" x2="124.3" y2="356.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="90.3" y1="350.1" x2="115.3" y2="350.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="90.3" y1="344.1" x2="124.3" y2="344.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="90.3" y1="339.1" x2="124.3" y2="339.1"/>
+		</g>
+		<g id="tablet-item-1-text">
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="50.3" y1="361.1" x2="84.3" y2="361.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="50.3" y1="367.1" x2="84.3" y2="367.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="50.3" y1="356.1" x2="76.3" y2="356.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="50.3" y1="350.1" x2="84.3" y2="350.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="50.3" y1="344.1" x2="81.3" y2="344.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="50.3" y1="339.1" x2="74.3" y2="339.1"/>
+		</g>
+	</g>
+	<g id="tablet-content">
+
+			<rect id="tablet-item-2-image_2_" x="90.4" y="304.5" fill="none" stroke="#DADADA" stroke-width="1.4182" stroke-miterlimit="10" width="33.8" height="27.3"/>
+
+			<rect id="tablet-item-1-image_2_" x="50.9" y="304.5" fill="none" stroke="#DADADA" stroke-width="1.4182" stroke-miterlimit="10" width="33.8" height="27.3"/>
+	</g>
+
+		<rect id="tablet-jumbotron" x="50.9" y="265.7" fill="none" stroke="#DADADA" stroke-width="1.4182" stroke-miterlimit="10" width="73.3" height="33.6"/>
+</g>
+<g id="phone">
+	<path id="phone-display" fill="#FFFFFF" stroke="#000000" stroke-width="7.091" stroke-miterlimit="10" d="M160.9,376.5h-39.7
+		c-1.5,0-2.8-1.2-2.8-2.8v-69c0-1.5,1.2-2.8,2.8-2.8h39.7c1.5,0,2.8,1.2,2.8,2.8v69C163.7,375.2,162.5,376.5,160.9,376.5z"/>
+	<g id="phone-text">
+		<g id="phone-item-1-text">
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="124.3" y1="364.1" x2="154.3" y2="364.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="124.3" y1="359.1" x2="151.3" y2="359.1"/>
+			<line fill="#DADADA" stroke="#DADADA" stroke-width="3" stroke-miterlimit="10" x1="124.3" y1="353.1" x2="145.3" y2="353.1"/>
+		</g>
+	</g>
+	<g id="phone-content">
+
+			<rect id="phone-item-1-image_2_" x="124.5" y="330.4" fill="none" stroke="#DADADA" stroke-width="1.4182" stroke-miterlimit="10" width="32.8" height="18.2"/>
+	</g>
+
+		<rect id="phone-jumbotron" x="124.5" y="308.3" fill="none" stroke="#DADADA" stroke-width="1.4182" stroke-miterlimit="10" width="32.8" height="18.2"/>
+
+		<rect id="phone-bezel_2_" x="120" y="371.5" stroke="#000000" stroke-width="2.8732" stroke-miterlimit="10" width="43.7" height="2.8"/>
+</g>
+</svg>
