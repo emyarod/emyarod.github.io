@@ -2,24 +2,15 @@ import React from 'react';
 import Jumbotron from './Jumbotron';
 import Label from './Label';
 import ContactImg from '../static/img/Contact/contact.jpg';
-import BlockRevealer from './BlockRevealer';
-import handleEnterViewport from '../config/utils';
 
 export default function Contact({ pathname }) {
   return (
     <div className="contact">
       <Jumbotron pathname={pathname} img={ContactImg}>
-        <BlockRevealer enterViewport={handleEnterViewport}>
-          <h1>Let's talk.</h1>
-        </BlockRevealer>
-        <BlockRevealer
-          enterViewport={handleEnterViewport}
-          animationDelay={.25}
-        >
-          <p className="sb blurb">
-            If you have a project you'd like to discuss, or even if you just want to find out more about me, get in touch so we can get started.
-          </p>
-        </BlockRevealer>
+        <h1>Let's talk.</h1>
+        <p className="sb blurb">
+          If you have a project you'd like to discuss, or even if you just want to find out more about me, get in touch so we can get started.
+        </p>
       </Jumbotron>
       <div className="block contact-form">
         <div className="wrap">
