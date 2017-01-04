@@ -8,6 +8,7 @@
   "author": "emyarod <allllaboutyou@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "normalize.css": "^5.0.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-headroom": "^2.1.3",

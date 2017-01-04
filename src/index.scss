@@ -31,6 +31,8 @@
   src: url('./static/fonts/ApercuPro-Mono.otf') format('opentype');
 }
 
+@import '../node_modules/normalize.css/normalize.css';
+
 @import './static/scss/vars';
 @import './static/scss/utils';
 @import './static/scss/layout';
