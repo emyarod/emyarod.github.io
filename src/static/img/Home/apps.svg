@@ -6,12 +6,12 @@
 	<circle fill="#1a1a1a" cx="250" cy="250" r="250"/>
 </g>
 <g id="Layer_1_1_">
-	<path id="frame" fill="none" stroke="#000" stroke-width="5" stroke-miterlimit="10" d="M391.8,392.8H108.2c-0.6,0-1-0.5-1-1
+	<path id="frame" fill="none" stroke="#f24e1e" stroke-width="5" stroke-miterlimit="10" d="M391.8,392.8H108.2c-0.6,0-1-0.5-1-1
 		V108.2c0-0.6,0.5-1,1-1h283.6c0.6,0,1,0.5,1,1v283.6C392.8,392.4,392.4,392.8,391.8,392.8z"/>
-	<line id="toolbar" fill="none" stroke="#000" stroke-width="5" stroke-miterlimit="10" x1="106" y1="157" x2="394" y2="157"/>
-	<circle id="close" fill="none" stroke="#000" stroke-width="3" stroke-miterlimit="10" cx="132.8" cy="132.1" r="10.3"/>
-	<circle id="minimize" fill="none" stroke="#000" stroke-width="3" stroke-miterlimit="10" cx="168.5" cy="132.1" r="10.3"/>
-	<circle id="maximize" fill="none" stroke="#000" stroke-width="3" stroke-miterlimit="10" cx="204.2" cy="132.1" r="10.3"/>
+	<line id="toolbar" fill="none" stroke="#f24e1e" stroke-width="5" stroke-miterlimit="10" x1="106" y1="157" x2="394" y2="157"/>
+	<circle id="close" fill="none" stroke="#ee4450" stroke-width="3" stroke-miterlimit="10" cx="132.8" cy="132.1" r="10.3"/>
+	<circle id="minimize" fill="none" stroke="#f7b632" stroke-width="3" stroke-miterlimit="10" cx="168.5" cy="132.1" r="10.3"/>
+	<circle id="maximize" fill="none" stroke="#30db3e" stroke-width="3" stroke-miterlimit="10" cx="204.2" cy="132.1" r="10.3"/>
 	<g id="code">
 		<path d="M166.7,260.1l-3.1,1l3.1,1l35.7,13.8v11.4L153,265.2v-8.5l49.4-22v11.4L166.7,260.1z"/>
 		<path d="M239.1,306h-9.7l35.4-92.1h9.6L239.1,306z"/>
