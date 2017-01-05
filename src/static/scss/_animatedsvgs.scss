@@ -110,6 +110,22 @@ $device-offsets: (
         animation-play-state: running;
       }
     }
+
+    // Microsoft Edge
+    _:-ms-lang(x),
+    _:-webkit-full-screen,
+    ##{$device}-#{$element} {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 0;
+    }
+
+    // IE 11
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      ##{$device}-#{$element} {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 0;
+      }
+    }
   }
 }
 
@@ -295,5 +311,21 @@ $fades: (
 
   .svg-container-animate #{$key} {
     animation-play-state: running;
+  }
+
+  // Microsoft Edge
+  _:-ms-lang(x),
+  _:-webkit-full-screen,
+  #{$key} {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+  }
+
+  // IE 11
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #{$key} {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 0;
+    }
   }
 }
