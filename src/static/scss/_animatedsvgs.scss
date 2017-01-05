@@ -255,20 +255,20 @@ $fades: (
     fill-final: transparent,
     delay: 2s,
   ),
-  '#leftbrace': (
+  '#leftbrace path': (
     name: 'braces',
     // stroke-dashoffset: unneeded,
-    stroke-initial: transparent,
-    stroke-final: transparent,
+    stroke-initial: $violet,
+    stroke-final: $violet,
     fill-initial: transparent,
     fill-final: $violet,
     delay: 2s,
   ),
-  '#rightbrace': (
+  '#rightbrace path': (
     name: 'braces',
     // stroke-dashoffset: unneeded,
-    stroke-initial: transparent,
-    stroke-final: transparent,
+    stroke-initial: $violet,
+    stroke-final: $violet,
     fill-initial: transparent,
     fill-final: $violet,
     delay: 2s,
