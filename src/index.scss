@@ -1,34 +1,39 @@
 @font-face {
   font-family: 'a';
   font-weight: 400;
-  src: url('./static/fonts/Apercu.otf') format('opentype');
+  src: url('./static/fonts/Apercu.woff2') format('woff2'),
+       url('./static/fonts/Apercu.woff') format('woff');
 }
 
 @font-face {
   font-family: 'a';
   font-weight: 400;
   font-style: italic;
-  src: url('./static/fonts/Apercu-Italic.otf') format('opentype');
+  src: url('./static/fonts/Apercu-Italic.woff2') format('woff2'),
+       url('./static/fonts/Apercu-Italic.woff') format('woff');
 }
 
 // medium
 @font-face {
   font-family: 'a';
   font-weight: 500;
-  src: url('./static/fonts/Apercu-Medium.otf') format('opentype');
+  src: url('./static/fonts/Apercu-Medium.woff2') format('woff2'),
+       url('./static/fonts/Apercu-Medium.woff') format('woff');
 }
 
 // bold
 @font-face {
   font-family: 'a';
   font-weight: 700;
-  src: url('./static/fonts/Apercu-Bold.otf') format('opentype');
+  src: url('./static/fonts/Apercu-Bold.woff2') format('woff2'),
+       url('./static/fonts/Apercu-Bold.woff') format('woff');
 }
 
 // monospace
 @font-face {
   font-family: 'm';
-  src: url('./static/fonts/ApercuPro-Mono.otf') format('opentype');
+  src: url('./static/fonts/ApercuPro-Mono.woff2') format('woff2'),
+       url('./static/fonts/ApercuPro-Mono.woff') format('woff');
 }
 
 @import '../node_modules/normalize.css/normalize.css';
