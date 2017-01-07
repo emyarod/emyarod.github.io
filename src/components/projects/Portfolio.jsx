@@ -10,6 +10,9 @@ export default function Portfolio() {
       <br />
       <h4 className="label">The Process</h4>
       <p>
+        I host my website on a custom GitHub Pages domain, and I use Cloudflare to encrypt the connection between visitors and Cloudflare.
+      </p>
+      <p>
         With an emphasis on speed in mind, I chose to render the site using React, and all of the routing is handled by React Router. Since updates and changes to the DOM are only applied when necessary, navigating the site feels quick and snappy.
       </p>
       <p>
