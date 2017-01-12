@@ -10,7 +10,7 @@ export default function Koreaboo() {
       <br />
       <h4 className="label">The Process</h4>
       <p>
-        I was approached by the founder and CEO of Koreaboo to implement a design refresh for their main website as they migrated to a new CMS. My tasks involved configuring their Wordpress installation and implementing custom features in their Wordpress theme, as well as helping with the transition to a new tech stack.
+        I was approached by the founder and CEO of Koreaboo to implement a design refresh for their main website as they migrated to a new CMS. My tasks involved configuring their WordPress installation and implementing custom features in their WordPress theme, as well as helping with the transition to a new tech stack.
       </p>
       <p>
         Rather than continuously adding on to their existing single large stylesheet, I refactored their CSS to more manageable Sass modules. The switch to Sass helped maintain consistent colors and styles, which were not being enforced previously. I also introduced a build step for easy Sass compilation using Gulp and npm scripts.

@@ -87,7 +87,7 @@ const projectData = [
       type: 'Website',
       role: 'Development',
       tools: [
-        ['Wordpress'],
+        ['WordPress'],
         ['Sass'],
         ['Gulp'],
       ],
@@ -113,6 +113,7 @@ const projectData = [
         'Webpack',
         'jQuery',
         'Adobe Photoshop',
+        'Bourbon',
       ],
       projectSource: {
         text: 'View source on GitHub',
