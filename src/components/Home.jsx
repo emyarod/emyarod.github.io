@@ -120,7 +120,7 @@ export default function Home({ pathname }) {
                   <ul>
                     <li>Git</li>
                     <li>Gulp, Webpack</li>
-                    <li>Adobe Creative Suite</li>
+                    <li>Adobe Photoshop, Illustrator, InDesign</li>
                   </ul>
                 </FadeIn>
               </div>
