@@ -22,7 +22,7 @@ export default function Flattish() {
         Designing the Flattish CSS theme was an excellent exercise in CSS, particularly because I was adding style rules on top of Reddit's base styles as well as Reddit Enhancement Suite's very <a href="https://github.com/honestbleeps/Reddit-Enhancement-Suite/search?l=SCSS&q=%21important&utf8=%E2%9C%93">specific styles</a>.
       </p>
       <p>
-        Building the theme editor was an exercise in JavaScript. In order to live update the stylesheet changes as the user makes them on the theme editor, the theme customizer app adds inline styles to the iframe preview element while also manipulating the Sass source files. When the user is finished customizing the theme, the edited Sass is compiled down to CSS in the browser itself, and a ZIP archive with the compiled stylesheets is made available for the user to download.
+        Building the theme editor was an exercise in JavaScript. I made use of many HTML5 Web APIs in order to flesh out the stylesheet customization application. In order to live update the stylesheet changes as the user makes them on the theme editor, the theme customizer app adds inline styles to the iframe preview element while also manipulating the Sass source files. Image uploading is all handled via the FileReader API, and image previews are displayed using the Canvas API. When the user is finished customizing the theme, the edited Sass is compiled down to CSS in the browser itself, and a ZIP archive with the compiled stylesheets is made available for the user to download.
       </p>
     </div>
   );
