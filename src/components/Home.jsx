@@ -17,10 +17,11 @@ export default function Home({ pathname }) {
         <BlockRevealer enterViewport={handleEnterViewport}>
           <h1>Andrew Wang</h1>
         </BlockRevealer>
-        <BlockRevealer enterViewport={handleEnterViewport} animationDelay={.25}>
-          <h5 className="sb blurb">
-            Front-end web developer based in the Bay Area
-          </h5>
+        <BlockRevealer
+          enterViewport={handleEnterViewport}
+          animationDelay={0.25}
+        >
+          <h5 className="sb blurb">Front-end web developer based in PVD</h5>
         </BlockRevealer>
       </Jumbotron>
       {/* BEGIN ABOUT */}
@@ -28,10 +29,18 @@ export default function Home({ pathname }) {
         <div className="wrap">
           <Label>About me</Label>
           <FadeIn>
-            <p>My name is Andrew Wang, and I am a web developer who specializes in working on the front end.</p>
+            <p>
+              My name is Andrew Wang, and I am a web developer who specializes
+              in working on the front end.
+            </p>
           </FadeIn>
           <FadeIn>
-            <p>I enjoy uncovering and solving design problems, developing robust web applications, as well as creating vivid web experiences. Driven by a passion for web technologies, I am always looking to learn new frameworks, languages, and paradigms.</p>
+            <p>
+              I enjoy uncovering and solving design problems, developing robust
+              web applications, as well as creating vivid web experiences.
+              Driven by a passion for web technologies, I am always looking to
+              learn new frameworks, languages, and paradigms.
+            </p>
           </FadeIn>
         </div>
       </div>
@@ -39,7 +48,7 @@ export default function Home({ pathname }) {
       {/* BEGIN SERVICES */}
       <div className="block">
         <div className="wrap">
-          <Label>Services & skillset</Label>
+          <Label>Services &amp; skillset</Label>
           <div className="section">
             <AnimatedSVG
               fullyEnterViewport={handleEnterViewport}
@@ -55,7 +64,11 @@ export default function Home({ pathname }) {
               </BlockRevealer>
               <FadeIn>
                 <p>
-                  Using modern browser technologies, I can construct websites, while fixing and avoiding common cross-browser compatibility issues. I have experience working on user interfaces, and I possess an eye for detail when it comes to user interaction and user experience.
+                  Using modern browser technologies, I can construct websites,
+                  while fixing and avoiding common cross-browser compatibility
+                  issues. I have experience working on user interfaces, and I
+                  possess an eye for detail when it comes to user interaction
+                  and user experience.
                 </p>
               </FadeIn>
             </div>
@@ -75,7 +88,11 @@ export default function Home({ pathname }) {
               </BlockRevealer>
               <FadeIn>
                 <p>
-                  I can work collaboratively with designers to create front-end elements for web applications and also with back-end engineers to implement application features. My understanding of front-end technologies allows me to build efficient front-end systems and helps me optimize for client-side performance.
+                  I can work collaboratively with designers to create front-end
+                  elements for web applications and also with back-end engineers
+                  to implement application features. My understanding of
+                  front-end technologies allows me to build efficient front-end
+                  systems and helps me optimize for client-side performance.
                 </p>
               </FadeIn>
             </div>
@@ -95,7 +112,8 @@ export default function Home({ pathname }) {
               </BlockRevealer>
               <FadeIn>
                 <p>
-                  Here are some of the tools, libraries, and frameworks that I am comfortable with using:
+                  Here are some of the tools, libraries, and frameworks that I
+                  am comfortable with using:
                 </p>
               </FadeIn>
               <div id="skills">
@@ -104,7 +122,7 @@ export default function Home({ pathname }) {
                   <ul>
                     <li>HTML5</li>
                     <li>CSS3, SCSS, PostCSS</li>
-                    <li>JavaScript (ES6), jQuery</li>
+                    <li>JavaScript (ES6+), jQuery</li>
                   </ul>
                 </FadeIn>
                 <FadeIn>
