@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Watch } from 'scrollmonitor-react';
 
 export default Watch(props => {
@@ -29,9 +30,9 @@ export default Watch(props => {
   );
 });
 
-Watch.PropTypes = {
-  class: React.PropTypes.string,
-  animationDelay: React.PropTypes.number,
-  bgc: React.PropTypes.string,
-  children: React.PropTypes.node.isRequired,
+Watch.propTypes = {
+  class: PropTypes.string,
+  animationDelay: PropTypes.number,
+  bgc: PropTypes.string,
+  children: PropTypes.node.isRequired,
 };

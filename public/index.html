@@ -1,14 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#000000">
-    <meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="%PUBLIC_URL%/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="%PUBLIC_URL%/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="%PUBLIC_URL%/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link
+      rel="mask-icon"
+      href="%PUBLIC_URL%/safari-pinned-tab.svg"
+      color="#000000"
+    />
+    <meta name="theme-color" content="#ffffff" />
     <!--
       Notice the use of %PUBLIC_URL% in the tag above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -48,26 +70,43 @@
       (function(l) {
         if (l.search) {
           var q = {};
-          l.search.slice(1).split('&').forEach(function(v) {
-            var a = v.split('=');
-            q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
-          });
+          l.search
+            .slice(1)
+            .split('&')
+            .forEach(function(v) {
+              var a = v.split('=');
+              q[a[0]] = a
+                .slice(1)
+                .join('=')
+                .replace(/~and~/g, '&');
+            });
           if (q.p !== undefined) {
-            window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + (q.p || '') +
-              (q.q ? ('?' + q.q) : '') +
-              l.hash
+            window.history.replaceState(
+              null,
+              null,
+              l.pathname.slice(0, -1) +
+                (q.p || '') +
+                (q.q ? '?' + q.q : '') +
+                l.hash
             );
           }
         }
-      }(window.location))
+      })(window.location);
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
     <script type="text/javascript">
-      !function(a,n,d,r,e,w){a.GoogleAnalyticsObject=d;a[d]||(a[d]=function(){
-      (a[d].q=a[d].q||[]).push(arguments)});a[d].l=+new Date;e=n.createElement(r);
-      w=n.getElementsByTagName(r)[0];e.src='//www.google-analytics.com/analytics.js';
-      w.parentNode.insertBefore(e,w)}(window,document,'ga','script');
+      !(function(a, n, d, r, e, w) {
+        a.GoogleAnalyticsObject = d;
+        a[d] ||
+          (a[d] = function() {
+            (a[d].q = a[d].q || []).push(arguments);
+          });
+        a[d].l = +new Date();
+        e = n.createElement(r);
+        w = n.getElementsByTagName(r)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        w.parentNode.insertBefore(e, w);
+      })(window, document, 'ga', 'script');
 
       ga('create', 'UA-XXXXX-X', 'auto');
       ga('send', 'pageview');

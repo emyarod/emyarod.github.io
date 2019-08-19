@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import BlockRevealer from './BlockRevealer';
 import handleEnterViewport from '../config/utils';
 
@@ -15,8 +16,8 @@ export default function Paragraph(props) {
   );
 };
 
-Paragraph.PropTypes = {
-  animationDelay: React.PropTypes.number,
-  bgc: React.PropTypes.string,
-  children: React.PropTypes.node.isRequired,
+Paragraph.propTypes = {
+  animationDelay: PropTypes.number,
+  bgc: PropTypes.string,
+  children: PropTypes.node.isRequired,
 };

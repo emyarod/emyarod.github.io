@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Jumbotron from './Jumbotron';
 import Label from './Label';
 import ContactImg from '../static/img/Contact/contact.jpg';
@@ -8,7 +9,7 @@ import handleEnterViewport from '../config/utils';
 export default function Contact({ pathname }) {
   return (
     <div className="contact">
-      <Jumbotron pathname={pathname} img={ContactImg}>
+      <Jumbotron img={ContactImg}>
         <BlockRevealer enterViewport={handleEnterViewport}>
           <h1>Let's talk.</h1>
         </BlockRevealer>
@@ -52,6 +53,6 @@ export default function Contact({ pathname }) {
   );
 }
 
-Contact.PropTypes = {
-  pathname: React.PropTypes.string.isRequired,
+Contact.propTypes = {
+  pathname: PropTypes.string.isRequired,
 };

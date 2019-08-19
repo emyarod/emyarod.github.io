@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Isvg from 'react-inlinesvg';
 import { Watch } from 'scrollmonitor-react';
 import FadeIn from './FadeIn';
@@ -13,7 +14,7 @@ export default Watch(({ src, alt }) => {
   );
 });
 
-Watch.PropTypes = {
-  src: React.PropTypes.node.isRequired,
-  alt: React.PropTypes.string.isRequired,
+Watch.propTypes = {
+  src: PropTypes.node.isRequired,
+  alt: PropTypes.string.isRequired,
 };

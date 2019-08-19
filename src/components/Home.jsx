@@ -10,10 +10,10 @@ import rwd from '../static/img/Home/rwd.svg';
 import apps from '../static/img/Home/apps.svg';
 import core from '../static/img/Home/core.svg';
 
-export default function Home({ pathname }) {
+export default function Home() {
   return (
     <div className="home">
-      <Jumbotron pathname={pathname} img={clouds} landing>
+      <Jumbotron img={clouds} landing>
         <BlockRevealer enterViewport={handleEnterViewport}>
           <h1>Andrew Wang</h1>
         </BlockRevealer>
@@ -21,7 +21,7 @@ export default function Home({ pathname }) {
           enterViewport={handleEnterViewport}
           animationDelay={0.25}
         >
-          <h5 className="sb blurb">Front-end web developer based in PVD</h5>
+          <h5 className="sb blurb">Front-end web developer based in ATX</h5>
         </BlockRevealer>
       </Jumbotron>
       {/* BEGIN ABOUT */}
@@ -150,7 +150,3 @@ export default function Home({ pathname }) {
     </div>
   );
 }
-
-Home.PropTypes = {
-  pathname: React.PropTypes.string.isRequired,
-};

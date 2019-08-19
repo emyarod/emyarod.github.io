@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Match, Miss } from 'react-router'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from './components/Header';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
@@ -8,33 +8,30 @@ import FourOhFour from './components/404';
 
 const App = () => (
   <BrowserRouter>
-    <div>
-      <Header />
+    <Header />
+    <Switch>
       {
         routes.map((route, index) => (
-          // rendering `Match`s with different
-          // components but the same pattern as before
-          <Match
+          <Route
             key={route.pattern}
-            pattern={route.pattern}
-            render={matchProps => {
+            path={route.pattern}
+            render={routeProps => {
               const Component = route.main;
               window.scroll(0, 0);
-
               return (
                 <div className="content">
-                  <Component {...matchProps} />
-                  <CTA matchProps={matchProps} />
+                  <Component {...routeProps} />
+                  <CTA {...routeProps} />
                 </div>
               );
             }}
-            exactly={route.exactly}
+            exact={route.exactly}
           />
         ))
       }
-      <Miss component={FourOhFour} />
-      <Footer />
-    </div>
+      <Route component={FourOhFour} />
+    </Switch>
+    <Footer />
   </BrowserRouter>
 );
 

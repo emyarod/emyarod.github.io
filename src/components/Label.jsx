@@ -9,7 +9,3 @@ export default function Label({ children }) {
     </BlockRevealer>
   );
 };
-
-Label.PropTypes = {
-  children: React.PropTypes.element.isRequired,
-};
