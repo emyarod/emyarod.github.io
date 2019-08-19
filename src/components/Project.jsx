@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import projectData from '../data/projectData';
 import Jumbotron from './Jumbotron';
 import Chip from './Chip';
@@ -7,17 +8,16 @@ import iconPaths from '../data/iconPaths';
 import BlockRevealer from './BlockRevealer';
 import handleEnterViewport from '../config/utils';
 
-export default function Project({ params }) {
+export default function Project(props) {
   const {
     name,
     jumbotronContent: { blurb, img, bgp },
     summary: { type, role, tools, projectSource, projectLink },
     details: Details,
-  } = projectData.find(element => element.path === params.path);
-
+  } = projectData.find(element => element.path === props.match.params.path);
   return (
     <div className="project">
-      <Jumbotron pathname={params.path} img={img} bgp={bgp}>
+      <Jumbotron img={img} bgp={bgp}>
         <BlockRevealer enterViewport={handleEnterViewport}>
           <h1>{name}</h1>
         </BlockRevealer>
@@ -43,7 +43,7 @@ export default function Project({ params }) {
             <h5 className="project-details__label sb">Tech Stack</h5>
             <div className="project-details__content">
               {
-                tools.map((tech, i) => {
+                tools.map((tech) => {
                   const avatarContent = typeof tech !== 'string'
                     ? (
                       <Icon
@@ -52,7 +52,6 @@ export default function Project({ params }) {
                       />
                     )
                     : tech.charAt(0);
-
                   return (
                     <Chip key={tech} avatar avatarContent={avatarContent}>
                       {tech}
@@ -107,6 +106,6 @@ export default function Project({ params }) {
   );
 };
 
-Project.PropTypes = {
-  params: React.PropTypes.object.isRequired,
+Project.propTypes = {
+  params: PropTypes.object.isRequired,
 };

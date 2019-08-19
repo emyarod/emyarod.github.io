@@ -1,5 +1,5 @@
 import React from 'react';
-import { Match, Link } from 'react-router';
+import { Route, Link } from 'react-router-dom';
 import Jumbotron from './Jumbotron';
 import Label from './Label';
 import Project from './Project';
@@ -9,15 +9,16 @@ import handleEnterViewport from '../config/utils';
 import projectData from '../data/projectData';
 import PortfolioImg from '../static/img/Portfolio/portfolio.jpg';
 
-export default function Portfolio({ pathname }) {
+export default function Portfolio(props) {
+  const { path } = props.match;
   return (
     <div className="portfolio">
       {/* portfolio landing page */}
-      <Match
-        pattern={pathname}
+      <Route
+        path={path}
         render={() => (
           <div>
-            <Jumbotron pathname={pathname} img={PortfolioImg}>
+            <Jumbotron img={PortfolioImg}>
               <BlockRevealer enterViewport={handleEnterViewport}>
                 <h1>Portfolio</h1>
               </BlockRevealer>
@@ -35,9 +36,9 @@ export default function Portfolio({ pathname }) {
                 <Label>Selected projects</Label>
                 <div className="tiles">
                   {
-                    projectData.map((project, i) => (
+                    projectData.map(project => (
                       <div key={project.path} className="project-tile">
-                        <Link to={`${pathname}/${project.path}`}>
+                        <Link to={`${path}/${project.path}`}>
                           <BlockRevealer
                             enterViewport={handleEnterViewport}
                             bgc="#c392ff"
@@ -56,15 +57,10 @@ export default function Portfolio({ pathname }) {
             </div>
           </div>
         )}
-        exactly
+        exact
       />
-
       {/* portfolio project */}
-      <Match pattern={`${pathname}/:path`} component={Project} />
+      <Route path={`${path}/:path`} component={Project} />
     </div>
   );
-};
-
-Portfolio.PropTypes = {
-  pathname: React.PropTypes.string.isRequired,
 };

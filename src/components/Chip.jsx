@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function Chip(props) {
   return (
@@ -21,8 +22,8 @@ export default function Chip(props) {
   );
 }
 
-Chip.PropTypes = {
-  avatar: React.PropTypes.boolean,
-  avatarContent: React.PropTypes.string,
-  children: React.PropTypes.string,
+Chip.propTypes = {
+  avatar: PropTypes.bool,
+  avatarContent: PropTypes.string,
+  children: PropTypes.string,
 };

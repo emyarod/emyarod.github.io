@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import MediaQuery from 'react-responsive';
 import FadeIn from './FadeIn';
 
-export default function Jumbotron({ bgp, pathname, landing, img, children }) {
+export default function Jumbotron({ bgp, landing, img, children }) {
   const colors = [
     '#ed8a87',
     '#ffd464',
@@ -54,10 +55,10 @@ export default function Jumbotron({ bgp, pathname, landing, img, children }) {
   );
 }
 
-Jumbotron.PropTypes = {
-  bgp: React.PropTypes.string,
-  pathname: React.PropTypes.string.isRequired,
-  landing: React.PropTypes.string,
-  img: React.PropTypes.node,
-  children: React.PropTypes.node.isRequired,
+Jumbotron.propTypes = {
+  bgp: PropTypes.string,
+  pathname: PropTypes.string.isRequired,
+  landing: PropTypes.bool,
+  img: PropTypes.node,
+  children: PropTypes.node.isRequired,
 };

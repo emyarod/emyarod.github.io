@@ -2,7 +2,7 @@ import React from 'react';
 import Headroom from 'react-headroom';
 import Isvg from 'react-inlinesvg';
 import MediaQuery from 'react-responsive';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../logo.svg';
 
 export default function Header() {
@@ -20,9 +20,9 @@ export default function Header() {
               </Isvg>
             </Link>
             <nav className="nav">
-              <Link to="/">Home</Link>
-              <Link to="/portfolio" activeClassName="active">Portfolio</Link>
-              <Link to="/contact" activeClassName="active">Contact</Link>
+              <NavLink to="/" exact>Home</NavLink>
+              <NavLink to="/portfolio" activeClassName="active">Portfolio</NavLink>
+              <NavLink to="/contact" activeClassName="active">Contact</NavLink>
             </nav>
           </header>
         </Headroom>

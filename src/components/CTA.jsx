@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import projectData from '../data/projectData';
 
 const CTAOptions = {
@@ -74,13 +74,13 @@ function CTABase({ ctaType, prev, next }) {
   );
 };
 
-export default function CTA({ matchProps: props }) {
-  if (props.pattern === '/') {
+export default function CTA(props) {
+  if (props.match.path === '/') {
     return <CTABase ctaType="home" />;
   }
 
-  if (props.pattern === '/portfolio') {
-    if (props.location.pathname === props.pattern) {
+  if (props.match.path === '/portfolio') {
+    if (props.location.pathname === props.match.path) {
       return <CTABase ctaType="portfolio" />
     }
 

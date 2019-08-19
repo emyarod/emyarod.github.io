@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function Icon({ icon }) {
   return (
@@ -8,6 +9,6 @@ export default function Icon({ icon }) {
   );
 };
 
-Icon.PropTypes = {
-  icon: React.PropTypes.string.isRequired,
+Icon.propTypes = {
+  icon: PropTypes.string.isRequired,
 };
